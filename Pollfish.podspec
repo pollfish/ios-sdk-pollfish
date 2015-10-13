@@ -3,7 +3,7 @@ s.name = 'Pollfish'
 s.version = '4.1.0'
 s.platform = :ios, '6.0'
 s.license = { :type => 'Commercial', :text => 'See https://www.pollfish.com/tos' }
-s.summary = 'Pollfish survey monetization SDK'
+s.summary = 'Pollfish iOS Survey Monetization SDK'
 s.description = 'Pollfish provides a new interactive monetization format to app developers that pays up to 20x more than classic ad clicks'
 s.homepage = 'https://www.pollfish.com'
 s.author = { 'Pollfish Inc.' => 'support@pollfish.com' }
