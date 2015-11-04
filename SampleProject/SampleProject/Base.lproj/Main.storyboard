@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Show/Hide-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Hello Pollfish! This screen demonstrates how you can use Pollfish in your app." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="25" y="293" width="550" height="14"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKU-76-imy">
+                                <rect key="frame" x="137" y="70" width="325" height="78"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtI-Ge-nJe">
+                                        <rect key="frame" x="18" y="17" width="105" height="44"/>
+                                        <color key="backgroundColor" red="0.1959706182" green="0.1959706182" blue="0.1959706182" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="V4y-ul-f8e"/>
+                                            <constraint firstAttribute="height" constant="44" id="brA-Ih-DBm"/>
+                                        </constraints>
+                                        <state key="normal" title="Show">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showPollfish:" destination="9pv-A4-QxB" eventType="touchUpInside" id="gux-wc-K8c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGo-Kh-q79">
+                                        <rect key="frame" x="200" y="17" width="105" height="44"/>
+                                        <color key="backgroundColor" red="0.1959706182" green="0.1959706182" blue="0.1959706182" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="Z1L-RD-sV7"/>
+                                            <constraint firstAttribute="height" constant="44" id="x57-ib-Non"/>
+                                        </constraints>
+                                        <state key="normal" title="Hide">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hidePollfish:" destination="9pv-A4-QxB" eventType="touchUpInside" id="8WU-fQ-xx7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZtI-Ge-nJe" firstAttribute="centerY" secondItem="BKU-76-imy" secondAttribute="centerY" id="HwP-wd-z9B"/>
+                                    <constraint firstItem="EGo-Kh-q79" firstAttribute="centerY" secondItem="BKU-76-imy" secondAttribute="centerY" id="Ixy-oY-W4y"/>
+                                    <constraint firstAttribute="height" constant="78" id="ZHi-vm-mCd"/>
+                                    <constraint firstItem="ZtI-Ge-nJe" firstAttribute="leading" secondItem="BKU-76-imy" secondAttribute="leading" constant="18" id="dbY-Cm-BMW"/>
+                                    <constraint firstAttribute="trailing" secondItem="EGo-Kh-q79" secondAttribute="trailing" constant="20" id="ixb-lW-Rth"/>
+                                    <constraint firstAttribute="width" constant="325" id="y0A-aY-6ln"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logging area..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvt-h9-tbY">
+                                <rect key="frame" x="25" y="271" width="550" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="394" id="jWp-ms-msT"/>
+                                    <constraint firstAttribute="height" constant="21" id="pt9-AX-8Yv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jWp-ms-msT"/>
+                                        <exclude reference="pt9-AX-8Yv"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="BKU-76-imy" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="50" id="GZj-5c-Bpm"/>
+                            <constraint firstItem="BKU-76-imy" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="R8g-id-JTZ"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="S0T-V7-EJh"/>
+                            <constraint firstItem="fvt-h9-tbY" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="Y7A-Cp-5up"/>
+                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="fvt-h9-tbY" secondAttribute="bottom" constant="10" id="jVq-fQ-arS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KQZ-1w-vlD" secondAttribute="trailing" constant="5" id="xtw-HK-DbN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fvt-h9-tbY" secondAttribute="trailing" constant="5" id="y0c-Lc-WK3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Show/Hide" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="loggingLabel" destination="fvt-h9-tbY" id="NaT-Wn-YVS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Incentivize-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="This screen demonstrates how you can incentivize your users to complete a survey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="25" y="223" width="550" height="14"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-Cd-8hD">
+                                <rect key="frame" x="170" y="256" width="260" height="44"/>
+                                <color key="backgroundColor" red="0.1959706182" green="0.1959706182" blue="0.1959706182" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="Clf-2a-ed4"/>
+                                    <constraint firstAttribute="height" constant="44" id="EOB-JO-M5Y"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="303" id="Swv-Mn-DWk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Win 200 coins by completing a survey">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Swv-Mn-DWk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showPollfish:" destination="9pv-A4-QxB" eventType="touchUpInside" id="dGw-BM-6uv"/>
+                                    <action selector="showPollfish:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="fvb-HR-SKn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logging area..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc4-pT-xg4">
+                                <rect key="frame" x="25" y="310" width="550" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="394" id="knn-7U-tcr"/>
+                                    <constraint firstAttribute="height" constant="21" id="m4k-XJ-9DR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="knn-7U-tcr"/>
+                                        <exclude reference="m4k-XJ-9DR"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uc4-pT-xg4" secondAttribute="trailing" constant="5" id="7jm-cI-MdF"/>
+                            <constraint firstItem="Uc4-pT-xg4" firstAttribute="centerX" secondItem="9VM-Cd-8hD" secondAttribute="centerX" id="8SI-J9-Xve"/>
+                            <constraint firstItem="9VM-Cd-8hD" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="19" id="CNt-pH-2hh"/>
+                            <constraint firstItem="zEq-FU-wV5" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="5" id="J3F-s6-vLv"/>
+                            <constraint firstItem="Uc4-pT-xg4" firstAttribute="top" secondItem="9VM-Cd-8hD" secondAttribute="bottom" constant="10" id="Maw-9T-Xfa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zEq-FU-wV5" secondAttribute="trailing" constant="5" id="PeX-Dh-jAG"/>
+                            <constraint firstItem="9VM-Cd-8hD" firstAttribute="leading" secondItem="zEq-FU-wV5" secondAttribute="leading" constant="94" id="bCm-ty-tDe"/>
+                            <constraint firstItem="9VM-Cd-8hD" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="cB3-mh-nrE"/>
+                            <constraint firstItem="Uc4-pT-xg4" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="gbr-e1-1Kt"/>
+                            <constraint firstItem="9VM-Cd-8hD" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="jWH-yV-xus"/>
+                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" constant="70" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="Uc4-pT-xg4" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="5" id="sKk-Eq-uvc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qqM-NS-xev"/>
+                                <exclude reference="bCm-ty-tDe"/>
+                                <exclude reference="jWH-yV-xus"/>
+                                <exclude reference="8SI-J9-Xve"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Incentivize" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="incentivizeBtn" destination="9VM-Cd-8hD" id="6xX-XF-QFg"/>
+                        <outlet property="loggingLabel" destination="Uc4-pT-xg4" id="N8o-jd-8CL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>

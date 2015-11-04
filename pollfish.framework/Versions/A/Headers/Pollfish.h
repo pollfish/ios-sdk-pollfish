@@ -52,6 +52,7 @@ typedef NS_ENUM(NSInteger, PollfishPosition) {
 
 + (void)initAtPosition:(int)pos withPadding:(int)margin andDeveloperKey:(NSString*)key andDebuggable: (BOOL) isDebuggable andCustomMode: (BOOL) isCustomMode andRequestUUID: (NSString *) request_uuid;
 
+
 /**
  * Used from developer to manually show Pollfish
  */
