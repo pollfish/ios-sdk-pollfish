@@ -14,14 +14,15 @@ class FirstViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+       
         print("viewWillAppear()")
-        
-        
+       
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"pollfishNotAvailable" , name:
             "PollfishSurveyNotAvailable", object: nil)
+       
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"pollfishReceived" , name:
             "PollfishSurveyReceived", object: nil)
-        print("viewDidLoad()")
+
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"pollfishOpened" , name:
             "PollfishOpened", object: nil)
         
@@ -48,7 +49,6 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-  
         
         print("viewDidLoad()")
     }

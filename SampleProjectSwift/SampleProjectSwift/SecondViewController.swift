@@ -16,8 +16,8 @@ class SecondViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+    
         print("viewWillAppear()")
-        
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"pollfishNotAvailable" , name:
             "PollfishSurveyNotAvailable", object: nil)
@@ -53,8 +53,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+     
         print("viewDidLoad()")
     }
     
@@ -99,7 +98,6 @@ class SecondViewController: UIViewController {
     
     func pollfishCompleted(notification:NSNotification) {
         
-        
         let tmp : [NSObject : AnyObject] = notification.userInfo!
         
         let playfulSurvey = tmp["playfulSurvey"]! as! Bool
@@ -119,12 +117,11 @@ class SecondViewController: UIViewController {
     
     override func viewWillDisappear(animated:Bool) {
         super.viewWillDisappear(animated)
+      
         print("viewWillDisappear()")
         
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
-
-
     
     @IBAction func showPollfish(sender: AnyObject) {
         print("showPollfish")
