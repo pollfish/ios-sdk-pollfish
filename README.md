@@ -17,7 +17,7 @@ Since Pollfish addresses the market research marketplace, Pollfish surveys can b
 ## Prerequisites
 
 *	iOS 6+ 
-*	XCode 5+
+*	Xcode 5+
 
 ## Quick Quide
 
