@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40110ABC1CDA473800245681 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40110ABB1CDA473800245681 /* SystemConfiguration.framework */; };
 		4077E3581BEB701F00E1D782 /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4077E3571BEB701F00E1D782 /* pollfish.framework */; };
 		40E309901BEA664600900C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3098F1BEA664600900C4C /* AppDelegate.swift */; };
 		40E309921BEA664600900C4C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E309911BEA664600900C4C /* FirstViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40110ABB1CDA473800245681 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4077E3571BEB701F00E1D782 /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pollfish.framework; path = ../pollfish.framework; sourceTree = "<group>"; };
 		40E3098C1BEA664600900C4C /* SampleProjectSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProjectSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E3098F1BEA664600900C4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40110ABC1CDA473800245681 /* SystemConfiguration.framework in Frameworks */,
 				4077E3581BEB701F00E1D782 /* pollfish.framework in Frameworks */,
 				40E309A71BEA687700900C4C /* AdSupport.framework in Frameworks */,
 				40E309A51BEA687200900C4C /* CoreTelephony.framework in Frameworks */,
@@ -50,6 +53,7 @@
 		40E309831BEA664600900C4C = {
 			isa = PBXGroup;
 			children = (
+				40110ABB1CDA473800245681 /* SystemConfiguration.framework */,
 				4077E3571BEB701F00E1D782 /* pollfish.framework */,
 				40E309A61BEA687700900C4C /* AdSupport.framework */,
 				40E309A41BEA687200900C4C /* CoreTelephony.framework */,

@@ -19,24 +19,24 @@ class SecondViewController: UIViewController {
     
         print("viewWillAppear()")
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:"pollfishNotAvailable" , name:
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishNotAvailable) , name:
             "PollfishSurveyNotAvailable", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:"pollfishReceived:" , name:
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishReceived(_:)) , name:
             "PollfishSurveyReceived", object: nil)
         print("viewDidLoad()")
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:"pollfishOpened" , name:
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishOpened) , name:
             "PollfishOpened", object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:"pollfishClosed" , name:
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishClosed) , name:
             "PollfishClosed", object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:"pollfishUsernotEligible" , name:
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishUsernotEligible) , name:
             "PollfishUserNotEligible", object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:"pollfishCompleted:" , name:
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishCompleted(_:)) , name:
             "PollfishSurveyCompleted", object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:"rotateApp" , name:
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.rotateApp) , name:
             UIDeviceOrientationDidChangeNotification, object: nil)
         
         Pollfish.initAtPosition( Int32(PollfishPosition.PollFishPositionMiddleLeft.rawValue), withPadding: 50, andDeveloperKey: "2ae349ab-30b8-4100-bc4d-b33b82e76519", andDebuggable: true, andCustomMode: true);

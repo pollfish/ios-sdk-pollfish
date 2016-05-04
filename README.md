@@ -12,12 +12,10 @@ Minimum revenue for each completed survey through an app is $0.30 and users neve
 
 Since Pollfish addresses the market research marketplace, Pollfish surveys can be used along with any ad network you are already using in your app without any problem, just to bring extra revenue! 
 
-[Learn More..](http://www.pollfish.com/monetize)
+[Learn More..](https://www.pollfish.com/publisher/)
 
-## Prerequisites
+**Requirements:** Pollfish framework works with iOS version 7.0 and above.  
 
-*	iOS 6+ 
-*	XCode 5+
 
 ## Quick Quide
 
@@ -27,7 +25,7 @@ Though CocoaPods:
 
 * Add a Podfile with Pollfish framework as a pod reference:
 ```
-platform :ios, '6.0'
+platform :ios, '7.0'
 pod 'Pollfish'
 ```
 * Run 'pod install' on the command line to install the Pollfish cocoapod. 
@@ -41,7 +39,7 @@ or:
 
 * Download Pollfish iOS SDK and unzip it
 * Import Pollfish.framework to your project
-* Import AdSupport.framework and CoreTelephony.framework to your project
+* Import AdSupport.framework, SystemConfiguration.framework and CoreTelephony.framework to your project
 * Call init and destroy function of Pollfish in the App’s Delegate
 * Set to Release mode and release in AppStore
 * Update your privacy policy
@@ -50,7 +48,7 @@ or:
 
 ## Documentation
 
-You can see a step by step guide on how to integrate at the official [Documentation page](http://www.pollfish.com/ios)
+You can see a step by step guide on how to integrate at the official [Documentation page](http://www.pollfish.com/docs/ios)
 
 ## Pollfish iOS Demo App
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40110AB91CDA469000245681 /* SystemConfiguration.framework */; };
 		403B68AA1BEA34F800AACD3E /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403B68A91BEA34F800AACD3E /* pollfish.framework */; };
 		405422B11BE8E7A400B6216B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B01BE8E7A400B6216B /* main.m */; };
 		405422B41BE8E7A400B6216B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B31BE8E7A400B6216B /* AppDelegate.m */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40110AB91CDA469000245681 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		403B68A91BEA34F800AACD3E /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pollfish.framework; path = ../pollfish.framework; sourceTree = "<group>"; };
 		405422AC1BE8E7A400B6216B /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405422B01BE8E7A400B6216B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */,
 				403B68AA1BEA34F800AACD3E /* pollfish.framework in Frameworks */,
 				405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */,
 				405422CC1BE8E8B300B6216B /* CoreTelephony.framework in Frameworks */,
@@ -54,6 +57,7 @@
 		405422A31BE8E7A400B6216B = {
 			isa = PBXGroup;
 			children = (
+				40110AB91CDA469000245681 /* SystemConfiguration.framework */,
 				403B68A91BEA34F800AACD3E /* pollfish.framework */,
 				405422CD1BE8E8F700B6216B /* AdSupport.framework */,
 				405422CB1BE8E8B300B6216B /* CoreTelephony.framework */,

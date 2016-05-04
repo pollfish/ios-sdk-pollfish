@@ -57,11 +57,6 @@
     
     [Pollfish setAttributeDictionary:userAttributesDictionary];
     
-    // update location
-    
-    [Pollfish updateLocationWithLatitude:42.682435 andLongitude:-76.376953 andHorizontalAccuracy:3.1];
-    
-    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
