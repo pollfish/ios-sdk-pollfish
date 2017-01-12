@@ -14,37 +14,37 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var loggingLabel: UILabel!
     
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     
         print("viewWillAppear()")
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishNotAvailable) , name:
-            "PollfishSurveyNotAvailable", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishReceived(_:)) , name:
-            "PollfishSurveyReceived", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(SecondViewController.pollfishNotAvailable) , name:
+            NSNotification.Name(rawValue: "PollfishSurveyNotAvailable"), object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(SecondViewController.pollfishReceived(_:)) , name:
+            NSNotification.Name(rawValue: "PollfishSurveyReceived"), object: nil)
         print("viewDidLoad()")
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishOpened) , name:
-            "PollfishOpened", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(SecondViewController.pollfishOpened) , name:
+            NSNotification.Name(rawValue: "PollfishOpened"), object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishClosed) , name:
-            "PollfishClosed", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(SecondViewController.pollfishClosed) , name:
+            NSNotification.Name(rawValue: "PollfishClosed"), object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishUsernotEligible) , name:
-            "PollfishUserNotEligible", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(SecondViewController.pollfishUsernotEligible) , name:
+            NSNotification.Name(rawValue: "PollfishUserNotEligible"), object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.pollfishCompleted(_:)) , name:
-            "PollfishSurveyCompleted", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(SecondViewController.pollfishCompleted(_:)) , name:
+            NSNotification.Name(rawValue: "PollfishSurveyCompleted"), object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SecondViewController.rotateApp) , name:
-            UIDeviceOrientationDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(SecondViewController.rotateApp) , name:
+            NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         
         Pollfish.initAtPosition( Int32(PollfishPosition.PollFishPositionMiddleLeft.rawValue), withPadding: 50, andDeveloperKey: "2ae349ab-30b8-4100-bc4d-b33b82e76519", andDebuggable: true, andCustomMode: true);
         
         Pollfish.hide()
         
         loggingLabel.text="Logging area.."
-        incentivizeBtn.hidden=true
+        incentivizeBtn.isHidden=true
     }
     
     func rotateApp(){
@@ -63,9 +63,9 @@ class SecondViewController: UIViewController {
         loggingLabel.text="Pollfish - Survey Not Available"
     }
     
-    func pollfishReceived(notification:NSNotification) {
+    func pollfishReceived(_ notification:Notification) {
      
-        let tmp : [NSObject : AnyObject] = notification.userInfo!
+        let tmp : [AnyHashable: Any] = notification.userInfo!
         
         let playfulSurvey = tmp["playfulSurvey"]! as! Bool
         let surveyPrice = tmp["surveyPrice"]!
@@ -74,7 +74,7 @@ class SecondViewController: UIViewController {
  
         loggingLabel.text="Pollfish Survey Received -Playful Survey: \(playfulSurvey)  and survey Price: \(surveyPrice)"
         
-        incentivizeBtn.hidden=false
+        incentivizeBtn.isHidden=false
     }
     
     func pollfishOpened() {
@@ -96,16 +96,16 @@ class SecondViewController: UIViewController {
     }
     
     
-    func pollfishCompleted(notification:NSNotification) {
+    func pollfishCompleted(_ notification:Notification) {
         
-        let tmp : [NSObject : AnyObject] = notification.userInfo!
+        let tmp : [AnyHashable: Any] = notification.userInfo!
         
         let playfulSurvey = tmp["playfulSurvey"]! as! Bool
         let surveyPrice = tmp["surveyPrice"]!
         
         print("pollfishCompleted - Playful Survey: \(playfulSurvey)  and survey Price: \(surveyPrice)")
 
-        incentivizeBtn.hidden=true
+        incentivizeBtn.isHidden=true
         
         loggingLabel.text="Pollfish Survey Completed - Congratulations, you have won 200 coins!"
     }
@@ -115,15 +115,15 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillDisappear(animated:Bool) {
+    override func viewWillDisappear(_ animated:Bool) {
         super.viewWillDisappear(animated)
       
         print("viewWillDisappear()")
         
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
     
-    @IBAction func showPollfish(sender: AnyObject) {
+    @IBAction func showPollfish(_ sender: AnyObject) {
         print("showPollfish")
         
         Pollfish.show();

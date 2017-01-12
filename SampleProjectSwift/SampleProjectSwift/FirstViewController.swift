@@ -12,31 +12,31 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var loggingLabel: UILabel!
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
        
         print("viewWillAppear()")
        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(FirstViewController.pollfishNotAvailable) , name:
-            "PollfishSurveyNotAvailable", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.pollfishNotAvailable) , name:
+            NSNotification.Name(rawValue: "PollfishSurveyNotAvailable"), object: nil)
        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(FirstViewController.pollfishReceived) , name:
-            "PollfishSurveyReceived", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.pollfishReceived) , name:
+            NSNotification.Name(rawValue: "PollfishSurveyReceived"), object: nil)
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(FirstViewController.pollfishOpened) , name:
-            "PollfishOpened", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.pollfishOpened) , name:
+            NSNotification.Name(rawValue: "PollfishOpened"), object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(FirstViewController.pollfishClosed) , name:
-            "PollfishClosed", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.pollfishClosed) , name:
+            NSNotification.Name(rawValue: "PollfishClosed"), object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(FirstViewController.pollfishUsernotEligible) , name:
-            "PollfishUserNotEligible", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.pollfishUsernotEligible) , name:
+            NSNotification.Name(rawValue: "PollfishUserNotEligible"), object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(FirstViewController.pollfishCompleted) , name:
-            "PollfishSurveyCompleted", object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.pollfishCompleted) , name:
+            NSNotification.Name(rawValue: "PollfishSurveyCompleted"), object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(FirstViewController.rotateApp) , name:
-          UIDeviceOrientationDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.rotateApp) , name:
+          NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         
         Pollfish.initAtPosition( Int32(PollfishPosition.PollFishPositionMiddleLeft.rawValue), withPadding: 0, andDeveloperKey: "2ae349ab-30b8-4100-bc4d-b33b82e76519", andDebuggable: true, andCustomMode: false);
         
@@ -94,21 +94,21 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillDisappear(animated:Bool) {
+    override func viewWillDisappear(_ animated:Bool) {
         super.viewWillDisappear(animated)
         print("viewWillDisappear()")
         
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
     
     
-    @IBAction func showPollfish(sender: AnyObject) {
+    @IBAction func showPollfish(_ sender: AnyObject) {
         print("showPollfish")
         
         Pollfish.show();
     }
     
-    @IBAction func hidePollfish(sender: AnyObject) {
+    @IBAction func hidePollfish(_ sender: AnyObject) {
         print("hidePollfish")
         
         Pollfish.hide();
