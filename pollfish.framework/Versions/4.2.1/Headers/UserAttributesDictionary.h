@@ -330,6 +330,8 @@ NSString *COUNTRY(COUNTRY_VALUE country);
 
 /**
  * Add user's facebook id
+ * 
+ * @param facebook_id User's facebook id
  *
  */
 - (UserAttributesDictionary *) setFacebookId: (NSString*) facebook_id;
@@ -337,57 +339,57 @@ NSString *COUNTRY(COUNTRY_VALUE country);
 /**
  * Add user's twitter id
  *
- * @param twitter_id
+ * @param twitter_id User's twitter id
  */
 - (UserAttributesDictionary *) setTwitterId: (NSString*) twitter_id;
 
 /**
  * Add custom attributes
  *
- * @param attr_key
- * @param attr_value
+ * @param attr_key User's custom attribute key
+ * @param attr_value User's custom attribute value
  */
 - (UserAttributesDictionary *) setCustomAtributesWithKey: (NSString*) attr_key andAttrValue: (NSString*)  attr_value;
     
 /**
  * Add user's linkedin id
  *
- * @param linkedin_id
+ * @param linkedin_id User's linkedin id
  */
 - (UserAttributesDictionary *) setLinkedInId: (NSString *) linkedin_id;
     
 /**
  * Add user's google id
  *
- * @param google_id
+ * @param google_id User's google id
  */
 - (UserAttributesDictionary *) setGoogleId: (NSString *) google_id;
     
 /**
  * Add user's email
  *
- * @param email
+ * @param email User's email id
  */
 - (UserAttributesDictionary *) setEmail: (NSString *) email;
     
 /**
  * Add user's phone
  *
- * @param phone
+ * @param phone User's phone id
  */
 - (UserAttributesDictionary *) setPhone: (NSString *) phone;
   
 /**
  * Add user's name
  *
- * @param name
+ * @param name User's name
  */
 - (UserAttributesDictionary *) setName: (NSString *) name;
    
 /**
  * Add user's surname
  *
- * @param surname
+ * @param surname User's surname
  */
 - (UserAttributesDictionary *) setSurname: (NSString *) surname;
 
@@ -457,7 +459,7 @@ NSString *COUNTRY(COUNTRY_VALUE country);
 /**
  * Add user's political views
  *
- * @param political_view  NSString of class POLITICAL_VIEW(REPUBLICAN_PARTY)
+ * @param political_view NSString of class POLITICAL_VIEW(REPUBLICAN_PARTY)
  */
 - (UserAttributesDictionary *)  setPoliticalView: (NSString *)  political_view;
 
