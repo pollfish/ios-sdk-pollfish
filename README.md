@@ -2,7 +2,7 @@
 
 ![alt tag](https://storage.googleapis.com/pollfish-images/logoHome.png)
 
-[Pollfish] (http://www.pollfish.com) is new way of monetizing mobile apps that pays up to 20x more than classic ads. 
+[Pollfish](http://www.pollfish.com) is new way of monetizing mobile apps that pays up to 20x more than classic ads. 
 
 Pollfish is a survey platform that delivers surveys instead of ads through mobile apps. Integration of Pollfish SDK takes less than 2 minutes and requires only one line of code. No changes are needed in the UI of the app since everything is displayed as an overlay (see below), while users that respond to surveys, enter into draws and win prizes (happy users)! 
 
@@ -52,4 +52,4 @@ You can see a step by step guide on how to integrate at the official [Documentat
 
 ## Pollfish iOS Demo App
 
-Try the look and feel of Pollfish surveys on [Pollfish iOS Demo App] (https://itunes.apple.com/us/app/pollfish-chalkboard/id782617904)
+Try the look and feel of Pollfish surveys on [Pollfish iOS Demo App](https://itunes.apple.com/us/app/pollfish-chalkboard/id782617904)
