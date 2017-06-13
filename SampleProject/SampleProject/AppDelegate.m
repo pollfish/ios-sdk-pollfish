@@ -37,25 +37,40 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     
+    
+    /*UserAttributesDictionary *userAttributesDictionary = [[UserAttributesDictionary alloc] init];
+    
+    //included in Demographic Surveys
+    [userAttributesDictionary setGender: GENDER(MALE)];
+    [userAttributesDictionary setRace:RACE(WHITE)];
+    [userAttributesDictionary setYearOfBirth:YEAR_OF_BIRTH(_1984)];
+    [userAttributesDictionary setMaritalStatus:MARITAL_STATUS(MARRIED)];
+    [userAttributesDictionary setParentalStatus:PARENTAL_STATUS(THREE)];
+    [userAttributesDictionary setEducation:EDUCATION_LEVEL(UNIVERSITY)];
+    [userAttributesDictionary setEmployment:EMPLOYMENT_STATUS(EMPLOYED_FOR_WAGES)];
+    [userAttributesDictionary setCareer:CAREER(TELECOMMUNICATIONS)];
+    [userAttributesDictionary setIncome:INCOME(MIDDLE_I)];
+    
+    //other user attributes
+    [userAttributesDictionary setEmail:@"user@email.com"];
+    [userAttributesDictionary setFacebookId:@"USER_FB"];
+    [userAttributesDictionary setGoogleId:@"USER_GOOGLEID"];
+    [userAttributesDictionary setTwitterId:@"USER_TWITTER"];
+    [userAttributesDictionary setLinkedInId:@"USER_LINKEDIN"];
+    [userAttributesDictionary setPhone:@"0030002221929"];
+    [userAttributesDictionary setName:@"USER_NAME"];
+    [userAttributesDictionary setSurname:@"USER_SURNAME"];
+    [userAttributesDictionary setCustomAttributeWithKey:@"my_param" andValue:@"my_value"];*/
+    
     [Pollfish initAtPosition:PollFishPositionMiddleRight
                  withPadding:0
              andDeveloperKey:@"af89aaf1-b7d4-46c1-8e91-b2625c2d5dbe"
                andDebuggable:true andCustomMode:false];
     
-    // set custom Attributes
-    
-    UserAttributesDictionary *userAttributesDictionary = [[UserAttributesDictionary alloc] init];
-    
-    [userAttributesDictionary setAge:AGE(_36)];
-    [userAttributesDictionary setGender: GENDER(MALE)];
-    [userAttributesDictionary setAgeGroup: AGE_GROUP(_35_44)];
-    [userAttributesDictionary setFacebookId:@"facebookId"];
-    [userAttributesDictionary setTwitterId:@"twitterId"];
-    [userAttributesDictionary setMaritalStatus:MARITAL_STATUS(DIVORCED)];
-    
-    [userAttributesDictionary setCustomAtributesWithKey:@"PARAM_KEY" andAttrValue: @"PARAM_VALUE"];
-    
-    [Pollfish setAttributeDictionary:userAttributesDictionary];
+    /*[Pollfish initAtPosition:PollFishPositionMiddleRight
+     withPadding:0
+     andDeveloperKey:@"af89aaf1-b7d4-46c1-8e91-b2625c2d5dbe"
+     andDebuggable:true andCustomMode:false andUserAttributes:userAttributesDictionary];*/
     
 }
 

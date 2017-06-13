@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40110AB91CDA469000245681 /* SystemConfiguration.framework */; };
+		403CACB91EF00A0F00D9DFE7 /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CACB81EF00A0F00D9DFE7 /* pollfish.framework */; };
 		405422B11BE8E7A400B6216B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B01BE8E7A400B6216B /* main.m */; };
 		405422B41BE8E7A400B6216B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B31BE8E7A400B6216B /* AppDelegate.m */; };
 		405422B71BE8E7A400B6216B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B61BE8E7A400B6216B /* FirstViewController.m */; };
@@ -17,12 +18,12 @@
 		405422C21BE8E7A400B6216B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405422C01BE8E7A400B6216B /* LaunchScreen.storyboard */; };
 		405422CC1BE8E8B300B6216B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405422CB1BE8E8B300B6216B /* CoreTelephony.framework */; };
 		405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405422CD1BE8E8F700B6216B /* AdSupport.framework */; };
-		40F8FAB71E27C460003BED5D /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403B68A91BEA34F800AACD3E /* pollfish.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40110AB91CDA469000245681 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		403B68A91BEA34F800AACD3E /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pollfish.framework; path = ../pollfish.framework; sourceTree = "<group>"; };
+		403CACB81EF00A0F00D9DFE7 /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pollfish.framework; sourceTree = "<group>"; };
 		405422AC1BE8E7A400B6216B /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405422B01BE8E7A400B6216B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		405422B21BE8E7A400B6216B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F8FAB71E27C460003BED5D /* pollfish.framework in Frameworks */,
+				403CACB91EF00A0F00D9DFE7 /* pollfish.framework in Frameworks */,
 				40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */,
 				405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */,
 				405422CC1BE8E8B300B6216B /* CoreTelephony.framework in Frameworks */,
@@ -54,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		403CACB71EF00A0F00D9DFE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				403CACB81EF00A0F00D9DFE7 /* pollfish.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		405422A31BE8E7A400B6216B = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +72,7 @@
 				405422CB1BE8E8B300B6216B /* CoreTelephony.framework */,
 				405422AE1BE8E7A400B6216B /* SampleProject */,
 				405422AD1BE8E7A400B6216B /* Products */,
+				403CACB71EF00A0F00D9DFE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,7 +297,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = ../;
+				FRAMEWORK_SEARCH_PATHS = (
+					../,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SampleProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -302,7 +315,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = ../;
+				FRAMEWORK_SEARCH_PATHS = (
+					../,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SampleProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
