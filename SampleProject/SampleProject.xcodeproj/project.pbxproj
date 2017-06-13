@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40110AB91CDA469000245681 /* SystemConfiguration.framework */; };
-		403CACB91EF00A0F00D9DFE7 /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CACB81EF00A0F00D9DFE7 /* pollfish.framework */; };
+		403CACBA1EF00C8000D9DFE7 /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CACB81EF00A0F00D9DFE7 /* pollfish.framework */; };
 		405422B11BE8E7A400B6216B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B01BE8E7A400B6216B /* main.m */; };
 		405422B41BE8E7A400B6216B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B31BE8E7A400B6216B /* AppDelegate.m */; };
 		405422B71BE8E7A400B6216B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B61BE8E7A400B6216B /* FirstViewController.m */; };
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				403CACB91EF00A0F00D9DFE7 /* pollfish.framework in Frameworks */,
+				403CACBA1EF00C8000D9DFE7 /* pollfish.framework in Frameworks */,
 				40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */,
 				405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */,
 				405422CC1BE8E8B300B6216B /* CoreTelephony.framework in Frameworks */,
