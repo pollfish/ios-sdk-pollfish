@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40110AB91CDA469000245681 /* SystemConfiguration.framework */; };
-		403CACBA1EF00C8000D9DFE7 /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CACB81EF00A0F00D9DFE7 /* pollfish.framework */; };
 		405422B11BE8E7A400B6216B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B01BE8E7A400B6216B /* main.m */; };
 		405422B41BE8E7A400B6216B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B31BE8E7A400B6216B /* AppDelegate.m */; };
 		405422B71BE8E7A400B6216B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 405422B61BE8E7A400B6216B /* FirstViewController.m */; };
@@ -18,11 +17,11 @@
 		405422C21BE8E7A400B6216B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405422C01BE8E7A400B6216B /* LaunchScreen.storyboard */; };
 		405422CC1BE8E8B300B6216B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405422CB1BE8E8B300B6216B /* CoreTelephony.framework */; };
 		405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405422CD1BE8E8F700B6216B /* AdSupport.framework */; };
+		4074D2381F8CD97100B6D8FB /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4074D2371F8CD97100B6D8FB /* pollfish.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40110AB91CDA469000245681 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		403B68A91BEA34F800AACD3E /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pollfish.framework; path = ../pollfish.framework; sourceTree = "<group>"; };
 		403CACB81EF00A0F00D9DFE7 /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pollfish.framework; sourceTree = "<group>"; };
 		405422AC1BE8E7A400B6216B /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405422B01BE8E7A400B6216B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		405422C31BE8E7A400B6216B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		405422CB1BE8E8B300B6216B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		405422CD1BE8E8F700B6216B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		4074D2371F8CD97100B6D8FB /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pollfish.framework; path = ../pollfish.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				403CACBA1EF00C8000D9DFE7 /* pollfish.framework in Frameworks */,
+				4074D2381F8CD97100B6D8FB /* pollfish.framework in Frameworks */,
 				40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */,
 				405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */,
 				405422CC1BE8E8B300B6216B /* CoreTelephony.framework in Frameworks */,
@@ -58,6 +58,7 @@
 		403CACB71EF00A0F00D9DFE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4074D2371F8CD97100B6D8FB /* pollfish.framework */,
 				403CACB81EF00A0F00D9DFE7 /* pollfish.framework */,
 			);
 			name = Frameworks;
@@ -67,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				40110AB91CDA469000245681 /* SystemConfiguration.framework */,
-				403B68A91BEA34F800AACD3E /* pollfish.framework */,
 				405422CD1BE8E8F700B6216B /* AdSupport.framework */,
 				405422CB1BE8E8B300B6216B /* CoreTelephony.framework */,
 				405422AE1BE8E7A400B6216B /* SampleProject */,
@@ -136,7 +136,7 @@
 		405422A41BE8E7A400B6216B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = POLLFISH;
 				TargetAttributes = {
 					405422AB1BE8E7A400B6216B = {
@@ -217,13 +217,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -245,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,13 +269,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -283,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,7 +318,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SampleProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.sampleproject.SampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -320,7 +336,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SampleProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.sampleproject.SampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
