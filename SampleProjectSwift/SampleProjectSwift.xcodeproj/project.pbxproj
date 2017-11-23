@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40110ABC1CDA473800245681 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40110ABB1CDA473800245681 /* SystemConfiguration.framework */; };
+		4080DBCF1FC6EDBB00CCB1DB /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F8FABA1E27C5B6003BED5D /* pollfish.framework */; };
 		40E309901BEA664600900C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3098F1BEA664600900C4C /* AppDelegate.swift */; };
 		40E309921BEA664600900C4C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E309911BEA664600900C4C /* FirstViewController.swift */; };
 		40E309941BEA664600900C4C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E309931BEA664600900C4C /* SecondViewController.swift */; };
@@ -16,7 +17,6 @@
 		40E3099C1BEA664600900C4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E3099A1BEA664600900C4C /* LaunchScreen.storyboard */; };
 		40E309A51BEA687200900C4C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E309A41BEA687200900C4C /* CoreTelephony.framework */; };
 		40E309A71BEA687700900C4C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E309A61BEA687700900C4C /* AdSupport.framework */; };
-		40F8FABB1E27C5B6003BED5D /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F8FABA1E27C5B6003BED5D /* pollfish.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F8FABB1E27C5B6003BED5D /* pollfish.framework in Frameworks */,
+				4080DBCF1FC6EDBB00CCB1DB /* pollfish.framework in Frameworks */,
 				40110ABC1CDA473800245681 /* SystemConfiguration.framework in Frameworks */,
 				40E309A71BEA687700900C4C /* AdSupport.framework in Frameworks */,
 				40E309A51BEA687200900C4C /* CoreTelephony.framework in Frameworks */,

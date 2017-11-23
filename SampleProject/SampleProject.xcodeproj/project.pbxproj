@@ -17,12 +17,11 @@
 		405422C21BE8E7A400B6216B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405422C01BE8E7A400B6216B /* LaunchScreen.storyboard */; };
 		405422CC1BE8E8B300B6216B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405422CB1BE8E8B300B6216B /* CoreTelephony.framework */; };
 		405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405422CD1BE8E8F700B6216B /* AdSupport.framework */; };
-		4074D2381F8CD97100B6D8FB /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4074D2371F8CD97100B6D8FB /* pollfish.framework */; };
+		4080DBCE1FC6ED0800CCB1DB /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4074D2371F8CD97100B6D8FB /* pollfish.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40110AB91CDA469000245681 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		403CACB81EF00A0F00D9DFE7 /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pollfish.framework; sourceTree = "<group>"; };
 		405422AC1BE8E7A400B6216B /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405422B01BE8E7A400B6216B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		405422B21BE8E7A400B6216B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4074D2381F8CD97100B6D8FB /* pollfish.framework in Frameworks */,
+				4080DBCE1FC6ED0800CCB1DB /* pollfish.framework in Frameworks */,
 				40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */,
 				405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */,
 				405422CC1BE8E8B300B6216B /* CoreTelephony.framework in Frameworks */,
@@ -59,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				4074D2371F8CD97100B6D8FB /* pollfish.framework */,
-				403CACB81EF00A0F00D9DFE7 /* pollfish.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

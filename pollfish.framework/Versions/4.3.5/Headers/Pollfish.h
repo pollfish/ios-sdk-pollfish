@@ -16,6 +16,13 @@ typedef NS_ENUM(NSInteger, PollfishPosition) {
     PollFishPositionMiddleRight
 };
 
+typedef NS_ENUM(NSInteger, SurveyFormat) {
+    SurveyFormatBasic=0,
+    SurveyFormatPlayful=1,
+    SurveyFormatRandom=2,
+    SurveyFormatThirdParty=3
+};
+
 @interface Pollfish : NSObject
 
 /**
@@ -86,9 +93,31 @@ typedef NS_ENUM(NSInteger, PollfishPosition) {
  @param isCustomMode Indicates if you are using Pollfish in custom mode
  @param request_uuid  Used with postback calls to dev server. Use nil if not provided
  @param userAttributes Dictionary of user attributes
+ @param surveyFormat Requests a specific survey format
+ */
+
++ (void)initAtPosition:(int)pos withPadding:(int)margin andDeveloperKey:(NSString*)key andDebuggable: (BOOL) isDebuggable andCustomMode: (BOOL) isCustomMode andRequestUUID: (NSString *) request_uuid andUserAttributes: (NSMutableDictionary *) userAttributes andSurveyFormat: (int) surveyFormat;
+
+
+/**
+ Initializes Pollfish within the app. This function requests a new survey
+ each time is called, from Pollfish servers.
+ 
+ Init function is the standard way of using Pollfish in your apps. Using
+ init function with custom mode false enables controlling the behavior of Pollfish in an app from
+ Pollfish panel.
+ 
+ @param pos The Position where you wish to place the PollFishPosition indicator.
+ @param margin The margin from top or bottom according to Position of the indicator specified before
+ @param key Your Pollfish API Key
+ @param isDebuggable Indicates if you are using in Release or Debug mode
+ @param isCustomMode Indicates if you are using Pollfish in custom mode
+ @param request_uuid  Used with postback calls to dev server. Use nil if not provided
+ @param userAttributes Dictionary of user attributes
  */
 
 + (void)initAtPosition:(int)pos withPadding:(int)margin andDeveloperKey:(NSString*)key andDebuggable: (BOOL) isDebuggable andCustomMode: (BOOL) isCustomMode andRequestUUID: (NSString *) request_uuid andUserAttributes: (NSMutableDictionary *) userAttributes;
+
 
 /**
  * Used from developer to manually show Pollfish
