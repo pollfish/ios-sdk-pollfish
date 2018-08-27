@@ -18,6 +18,7 @@
 		405422CC1BE8E8B300B6216B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405422CB1BE8E8B300B6216B /* CoreTelephony.framework */; };
 		405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405422CD1BE8E8F700B6216B /* AdSupport.framework */; };
 		4080DBCE1FC6ED0800CCB1DB /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4074D2371F8CD97100B6D8FB /* pollfish.framework */; };
+		40E837F92134059200E91AB3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E837F82134059200E91AB3 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		405422CB1BE8E8B300B6216B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		405422CD1BE8E8F700B6216B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		4074D2371F8CD97100B6D8FB /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pollfish.framework; path = ../pollfish.framework; sourceTree = "<group>"; };
+		40E837F82134059200E91AB3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E837F92134059200E91AB3 /* WebKit.framework in Frameworks */,
 				4080DBCE1FC6ED0800CCB1DB /* pollfish.framework in Frameworks */,
 				40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */,
 				405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */,
@@ -57,6 +60,7 @@
 		403CACB71EF00A0F00D9DFE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40E837F82134059200E91AB3 /* WebKit.framework */,
 				4074D2371F8CD97100B6D8FB /* pollfish.framework */,
 			);
 			name = Frameworks;

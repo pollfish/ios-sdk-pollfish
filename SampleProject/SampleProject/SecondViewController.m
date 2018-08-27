@@ -36,7 +36,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishCompleted:) name:@"PollfishSurveyCompleted" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishReceived:) name:@"PollfishSurveyReceived" object:nil];
     
-      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initPollfish) name:UIDeviceOrientationDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishUserRejectedSurvey) name:@"PollfishUserRejectedSurvey" object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initPollfish) name:UIDeviceOrientationDidChangeNotification object:nil];
 
     [self initPollfish];
 
@@ -119,6 +121,18 @@
     
     [Pollfish show];
 }
+
+
+- (void) pollfishUserRejectedSurvey
+{
+    NSLog(@"Pollfish: User Rejected Survey");
+    
+    _loggingLabel.text=@"Pollfish - User Rejected Survey";
+    
+    _incentivizeBtn.hidden=true;
+
+}
+
 
 
 - (void)viewWillDisappear:(BOOL)animated

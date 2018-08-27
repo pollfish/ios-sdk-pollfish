@@ -25,7 +25,7 @@ Though CocoaPods:
 
 * Add a Podfile with Pollfish framework as a pod reference:
 ```
-platform :ios, '7.0'
+platform :ios, '9.0'
 pod 'Pollfish'
 ```
 * Run 'pod install' on the command line to install the Pollfish cocoapod. 
@@ -39,8 +39,8 @@ or:
 
 * Download Pollfish iOS SDK and unzip it
 * Import Pollfish.framework to your project
-* Import AdSupport.framework, SystemConfiguration.framework and CoreTelephony.framework to your project
-* Call init and destroy function of Pollfish in the App’s Delegate or within a View Controller
+* Import AdSupport.framework, SystemConfiguration.framework, WebKit.framework and CoreTelephony.framework to your project
+* Call init Pollfish in the App’s Delegate or within a View Controller
 * Set to Release mode and release in AppStore
 * Update your privacy policy
 

@@ -20,6 +20,9 @@ class FirstViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.pollfishNotAvailable) , name:
             NSNotification.Name(rawValue: "PollfishSurveyNotAvailable"), object: nil)
        
+        NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.pollfishUserRejectedSurvey) , name:
+            NSNotification.Name(rawValue: "PollfishUserRejectedSurvey"), object: nil)
+        
         NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.pollfishReceived) , name:
             NSNotification.Name(rawValue: "PollfishSurveyReceived"), object: nil)
 
@@ -82,6 +85,13 @@ class FirstViewController: UIViewController {
         
         loggingLabel.text="Pollfish - User Not Eligible"
     }
+    
+    func pollfishUserRejectedSurvey() {
+        print("pollfishUserRejectedSurvey")
+        
+        loggingLabel.text="Pollfish - User Rejected Survey"
+    }
+    
     
     func pollfishCompleted() {
         print("pollfishCompleted")

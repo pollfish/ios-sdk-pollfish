@@ -33,6 +33,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishCompleted:) name:@"PollfishSurveyCompleted" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishReceived:) name:@"PollfishSurveyReceived" object:nil];
     
+   
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishUserRejectedSurvey) name:@"PollfishUserRejectedSurvey" object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(rotateApp) name:UIDeviceOrientationDidChangeNotification object:nil];
     
@@ -118,6 +120,15 @@
     
     _loggingLabel.text=@"Pollfish - Survey Not Available";
 }
+
+- (void) pollfishUserRejectedSurvey
+{
+    NSLog(@"Pollfish: User Rejected Survey");
+    
+    
+    _loggingLabel.text=@"Pollfish - User Rejected Survey";
+}
+
 
 - (void)pollfishUsernotEligible
 {

@@ -26,7 +26,8 @@ class SecondViewController: UIViewController {
         print("viewDidLoad()")
         NotificationCenter.default.addObserver(self, selector:#selector(SecondViewController.pollfishOpened) , name:
             NSNotification.Name(rawValue: "PollfishOpened"), object: nil)
-        
+        NotificationCenter.default.addObserver(self, selector:#selector(FirstViewController.pollfishUserRejectedSurvey) , name:
+            NSNotification.Name(rawValue: "PollfishUserRejectedSurvey"), object: nil)
         NotificationCenter.default.addObserver(self, selector:#selector(SecondViewController.pollfishClosed) , name:
             NSNotification.Name(rawValue: "PollfishClosed"), object: nil)
         
@@ -128,5 +129,15 @@ class SecondViewController: UIViewController {
         
         Pollfish.show();
     }
+    
+    func pollfishUserRejectedSurvey() {
+        print("pollfishUserRejectedSurvey")
+        
+        loggingLabel.text="Pollfish - User Rejected Survey"
+        
+        incentivizeBtn.isHidden=true
+        
+    }
+    
 }
 

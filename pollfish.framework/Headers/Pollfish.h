@@ -118,7 +118,6 @@ typedef NS_ENUM(NSInteger, SurveyFormat) {
 
 + (void)initAtPosition:(int)pos withPadding:(int)margin andDeveloperKey:(NSString*)key andDebuggable: (BOOL) isDebuggable andCustomMode: (BOOL) isCustomMode andRequestUUID: (NSString *) request_uuid andUserAttributes: (NSMutableDictionary *) userAttributes;
 
-
 /**
  * Used from developer to manually show Pollfish
  */
@@ -137,9 +136,10 @@ typedef NS_ENUM(NSInteger, SurveyFormat) {
 
 
 /**
- * Used to destroy Pollfish object
+ * Used to explicitly destroy Pollfish object if needed
+ * Should be called from UI thread
  */
-+ (void)destroy DEPRECATED_MSG_ATTRIBUTE("Deprecated - Automatically handled by the system");
++ (void)destroy;
 
 /**
  Updates user location data anytime after initialization to get better fill rate on surveys
