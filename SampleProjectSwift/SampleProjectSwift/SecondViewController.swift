@@ -68,12 +68,14 @@ class SecondViewController: UIViewController {
      
         let tmp : [AnyHashable: Any] = notification.userInfo!
         
-        let playfulSurvey = tmp["playfulSurvey"]! as! Bool
-        let surveyPrice = tmp["surveyPrice"]!
+        let surveyPrice = tmp["survey_cpa"]!
+        let surveyIR =  tmp["survey_ir"]!
+        let surveyLOI =  tmp["survey_loi"]!
+        let surveyClass =  tmp["survey_class"]!
         
-        print("pollfishReceived - Playful Survey: \(playfulSurvey)  and survey Price: \(surveyPrice)")
- 
-        loggingLabel.text="Pollfish Survey Received -Playful Survey: \(playfulSurvey)  and survey Price: \(surveyPrice)"
+        print("Pollfish Survey  Received - SurveyPrice: \(surveyPrice) andSurveyIR: \(surveyIR) andSurveyLOI: \(surveyLOI) andSurveyClass: \(surveyClass)")
+
+        loggingLabel.text="Pollfish Survey Received - SurveyPrice: \(surveyPrice) andSurveyIR: \(surveyIR) andSurveyLOI: \(surveyLOI) andSurveyClass: \(surveyClass)"
         
         incentivizeBtn.isHidden=false
     }
@@ -100,11 +102,13 @@ class SecondViewController: UIViewController {
     func pollfishCompleted(_ notification:Notification) {
         
         let tmp : [AnyHashable: Any] = notification.userInfo!
+   
+        let surveyPrice = tmp["survey_cpa"]!
+        let surveyIR =  tmp["survey_ir"]!
+        let surveyLOI =  tmp["survey_loi"]!
+        let surveyClass =  tmp["survey_class"]!
         
-        let playfulSurvey = tmp["playfulSurvey"]! as! Bool
-        let surveyPrice = tmp["surveyPrice"]!
-        
-        print("pollfishCompleted - Playful Survey: \(playfulSurvey)  and survey Price: \(surveyPrice)")
+        print("pollfishCompleted - SurveyPrice: \(surveyPrice) andSurveyIR: \(surveyIR) andSurveyLOI: \(surveyLOI) andSurveyClass: \(surveyClass)")
 
         incentivizeBtn.isHidden=true
         

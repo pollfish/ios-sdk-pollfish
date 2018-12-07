@@ -62,12 +62,15 @@
 
 - (void)pollfishCompleted:(NSNotification *)notification
 {
-    BOOL playfulSurvey = [[[notification userInfo] valueForKey:@"playfulSurvey"] boolValue];
+
+    int surveyPrice = [[[notification userInfo] valueForKey:@"survey_cpa"] intValue];
+    int surveyIR = [[[notification userInfo] valueForKey:@"survey_ir"] intValue];
+    int surveyLOI = [[[notification userInfo] valueForKey:@"survey_loi"] intValue];
     
-    int surveyPrice = [[[notification userInfo] valueForKey:@"surveyPrice"] intValue];
-    
-    NSLog(@"Pollfish: Survey Completed - Playful Survey: %@ and survey Price: %d" , playfulSurvey?@"YES":@"NO",surveyPrice);
+    NSString *surveyClass =[[notification userInfo] valueForKey:@"survey_class"];
   
+    NSLog(@"Pollfish: Survey Completed - SurveyPrice:%d andSurveyIR: %d andSurveyLOI:%d andSurveyClass:%@", surveyPrice,surveyIR, surveyLOI, surveyClass);
+
     _incentivizeBtn.hidden=true;
     
     _loggingLabel.text=@"Pollfish Survey Completed - Congratulations, you have won 200 coins!";
@@ -76,15 +79,17 @@
 - (void)pollfishReceived:(NSNotification *)notification
 {
     
-    BOOL playfulSurvey = [[[notification userInfo] valueForKey:@"playfulSurvey"] boolValue];
+    int surveyPrice = [[[notification userInfo] valueForKey:@"survey_cpa"] intValue];
+    int surveyIR = [[[notification userInfo] valueForKey:@"survey_ir"] intValue];
+    int surveyLOI = [[[notification userInfo] valueForKey:@"survey_loi"] intValue];
     
-    int surveyPrice = [[[notification userInfo] valueForKey:@"surveyPrice"] intValue];
+    NSString *surveyClass =[[notification userInfo] valueForKey:@"survey_class"];
     
-    NSLog(@"Pollfish: Survey Received - Playful Survey: %@ and survey Price: %d" , playfulSurvey?@"YES":@"NO",surveyPrice);
-  
+    NSLog(@"Pollfish: Survey Received - SurveyPrice:%d andSurveyIR: %d andSurveyLOI:%d andSurveyClass:%@", surveyPrice,surveyIR, surveyLOI, surveyClass);
+
     _incentivizeBtn.hidden=false;
     
-    _loggingLabel.text=[NSString stringWithFormat:@"Pollfish: Survey Received - Playful Survey: %@ and survey Price: %d" , playfulSurvey? @"YES":@"NO",surveyPrice];
+    _loggingLabel.text=[NSString stringWithFormat:@"Pollfish: Survey Received - SurveyPrice:%d andSurveyIR: %d andSurveyLOI:%d andSurveyClass:%@",surveyPrice,surveyIR, surveyLOI, surveyClass];
     
 
 }
