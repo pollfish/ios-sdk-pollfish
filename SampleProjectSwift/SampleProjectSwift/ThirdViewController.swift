@@ -1,33 +1,30 @@
 //
-//  SecondViewController.swift
+//  ThirdViewController.swift
 //  SampleProjectSwift
 //
-//  Created by Pollfish Inc. on 11/4/15.
-//  Copyright © 2015 POLLFISH. All rights reserved.
+//  Created by Pollfish on 13/05/2019.
+//  Copyright © 2019 POLLFISH. All rights reserved.
 //
+
 
 import UIKit
 
-class SecondViewController: UIViewController {
-
-    @IBOutlet weak var incentivizeBtn: UIButton!
+class ThirdViewController: UIViewController {
+    
+    
+    @IBOutlet weak var offerwallBtn: UIButton!
     @IBOutlet weak var loggingLabel: UILabel!
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-    
+        
         print("viewWillAppear()")
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "PollfishSurveyNotAvailable"),
                                                object: nil,
                                                queue: nil,
                                                using:pollfishNotAvailable)
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "PollfishUserRejectedSurvey"),
-                                               object: nil,
-                                               queue: nil,
-                                               using:pollfishUserRejectedSurvey)
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "PollfishSurveyReceived"),
                                                object: nil,
@@ -55,7 +52,7 @@ class SecondViewController: UIViewController {
                                                using:pollfishUsernotEligible)
         
         loggingLabel.text="Logging area.."
-        incentivizeBtn.isHidden=true
+        offerwallBtn.isHidden=true
         
         pollfishInit()
     }
@@ -67,7 +64,7 @@ class SecondViewController: UIViewController {
     
     override func viewWillDisappear(_ animated:Bool) {
         super.viewWillDisappear(animated)
-      
+        
         print("viewWillDisappear()")
         
         NotificationCenter.default.removeObserver(self)
@@ -83,7 +80,7 @@ class SecondViewController: UIViewController {
         pollfishParams.rewardMode=true;
         pollfishParams.indicatorPadding=10;
         pollfishParams.releaseMode = false;
-        pollfishParams.offerwallMode = false;
+        pollfishParams.offerwallMode = true;
         pollfishParams.requestUUID="my_id";
         
         Pollfish.initWithAPIKey("2ae349ab-30b8-4100-bc4d-b33b82e76519", andParams: pollfishParams);
@@ -114,9 +111,6 @@ class SecondViewController: UIViewController {
             
             loggingLabel.text="Pollfish Survey Received - SurveyPrice: \(String(describing: surveyPrice)) andSurveyIR: \(String(describing: surveyIR)) andSurveyLOI: \(String(describing: surveyLOI)) andSurveyClass: \(String(describing: surveyClass)) andRewardName: \(String(describing: rewardName)) andRewardValue:\(String(describing: rewardValue))"
             
-            incentivizeBtn.setTitle("Earn \(rewardValue ?? "") \(rewardName ?? "") by completing a survey"
-                , for: UIControl.State.normal)
-            
         }else{
             
             print("Pollfish Survey Received")
@@ -124,7 +118,7 @@ class SecondViewController: UIViewController {
             loggingLabel.text="Pollfish Survey Received"
         }
         
-        incentivizeBtn.isHidden=false
+        offerwallBtn.isHidden=false
     }
     
     func pollfishOpened(_ notification:Notification) {
@@ -143,18 +137,8 @@ class SecondViewController: UIViewController {
         print("pollfishUsernotEligible")
         
         loggingLabel.text="Pollfish - User Not Eligible"
-        
-        incentivizeBtn.isHidden=true
     }
-    
-    func pollfishUserRejectedSurvey(_ notification:Notification) {
-        print("pollfishUserRejectedSurvey")
-        
-        loggingLabel.text="Pollfish - User Rejected Survey"
-        
-        incentivizeBtn.isHidden=true
-    }
-    
+
     
     func pollfishCompleted(_ notification:Notification) {
         
@@ -181,8 +165,6 @@ class SecondViewController: UIViewController {
         
         
         // in a real world app you should wait for s2s callbacks prior rewarding your user
-        
-        incentivizeBtn.isHidden=true
     }
     
     @IBAction func showPollfish(_ sender: AnyObject) {
@@ -196,6 +178,5 @@ class SecondViewController: UIViewController {
         
         Pollfish.hide();
     }
-
+    
 }
-

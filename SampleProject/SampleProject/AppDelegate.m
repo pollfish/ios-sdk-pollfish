@@ -62,15 +62,20 @@
     [userAttributesDictionary setSurname:@"USER_SURNAME"];
     [userAttributesDictionary setCustomAttributeWithKey:@"my_param" andValue:@"my_value"];*/
     
-    [Pollfish initAtPosition:PollFishPositionMiddleRight
-                 withPadding:0
-             andDeveloperKey:@"af89aaf1-b7d4-46c1-8e91-b2625c2d5dbe"
-               andDebuggable:true andCustomMode:false];
     
-    /*[Pollfish initAtPosition:PollFishPositionMiddleRight
-     withPadding:0
-     andDeveloperKey:@"af89aaf1-b7d4-46c1-8e91-b2625c2d5dbe"
-     andDebuggable:true andCustomMode:false andUserAttributes:userAttributesDictionary];*/
+    /*PollfishParams *pollfishParams =  [PollfishParams initWith:^(PollfishParams *pollfishParams) {
+        
+        pollfishParams.indicatorPosition=PollFishPositionMiddleRight;
+        pollfishParams.indicatorPadding=10;
+        pollfishParams.releaseMode= false;
+        pollfishParams.offerwallMode= false;
+        pollfishParams.rewardMode=true;
+        pollfishParams.requestUUID=@"my_id";
+        pollfishParams.userAttributes=(demographicsMode==true)?userAttributesDictionary:nil;
+        pollfishParams.pollfishViewContainer=nil;//self.view;
+    }];
+    
+    [Pollfish initWithAPIKey:@"af89aaf1-b7d4-46c1-8e91-b2625c2d5dbe" andParams:pollfishParams];*/
     
 }
 

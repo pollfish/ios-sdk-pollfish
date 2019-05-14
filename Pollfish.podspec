@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
 s.name = 'Pollfish'
-s.version = '4.5.1'
+s.version = '5.0.0'
 s.platform = :ios, '9.0'
 s.license = { :type => 'Commercial', :text => 'See https://www.pollfish.com/terms/publisher' }
 s.summary = 'Pollfish iOS Survey Monetization SDK'
 s.description = 'Pollfish provides a new interactive monetization format to app developers that pays up to 20x more than classic ad clicks'
-s.homepage = 'https://www.pollfish.com'
+s.homepage = 'https://www.pollfish.com/publisher/'
 s.author = { 'Pollfish Inc.' => 'support@pollfish.com' }
 s.social_media_url = 'https://twitter.com/pollfish'
 s.requires_arc = true
