@@ -189,6 +189,78 @@ typedef enum {
     PREFER_NOT_TO_SAY_INCOME
 } INCOME_VALUE;
 
+typedef enum {
+    ENGLISH,
+    ARABIC,
+    BULGARIAN,
+    CHINESE,
+    CZECH,
+    DANISH,
+    DUTCH,
+    FILIPINO,
+    THAI,
+    FINNISH,
+    FRENCH,
+    GERMAN,
+    GREEK,
+    HINDI,
+    INDONESIAN,
+    ITALIAN,
+    JAPANESE,
+    POLISH,
+    PORTUGUESE,
+    ROMANIAN,
+    RUSSIAN,
+    SERBIAN,
+    SPANISH,
+    SWEDISH,
+    TURKISH,
+    VIETNAMESE
+} SPOKEN_LANGUAGE_VALUE;
+
+typedef enum {
+    OWNER_PARTNER,
+    PRESIDENT_CEO_CHAIRPERSON,
+    C_LEVEL_EXECUTIVE,
+    MIDDLE_MANAGEMENT,
+    CHIEF_FINANCIAL_OFFICER,
+    CHIEF_TECHNICAL_OFFICER,
+    SENIOR_MANAGEMENT,
+    DIRECTOR,
+    HR_MANAGER,
+    PRODUCT_MANAGER,
+    SUPPLY_MANAGER,
+    PROJECT_MANAGEMENT,
+    SALES_MANAGER,
+    BUSINESS_ADMINISTRATOR,
+    SUPERVISOR,
+    ADMINISTRATIVE_CLERICAL,
+    CRAFTSMAN,
+    FOREMAN,
+    TECHNICAL_STAFF,
+    FACULTY_STAFF,
+    SALES_STAFF,
+    BUYER_PURCHASING_AGENT,
+    OTHER_NON_MANAGEMENT,
+    NOT_WORK,
+    PREFER_NOT_TOSAY
+} ORGANIZATION_ROLE_VALUE;
+
+typedef enum {
+ ONE_EMPLOYEE,
+ TWO_TO_FIVE,
+ SIX_TO_TEN,
+ ELEVEN_TO_TWENTY_FIVE,
+ TWENTY_SIX_TO_FIFTY,
+ FIFTY_ONE_TO_HUNDREND,
+ HUNDREND_ONE_TO_TWO_HUNDRENDS_FIFTY,
+ TWO_HUNDRENDS_FIFTY_ONE_TO_FIVE_HUNDRENDS,
+ FIVE_HUNDRENDS_ONE_TO_THOUSAND,
+ THOUSAND_ONE_TO_FIVE_THOUSANDS,
+ GREATER_THAN_FIVE_THOUSANDS,
+ DO_NOT_WORK,
+ PREFER_NOTTO_SAY
+} NUMBER_OF_EMPLOYEES_VALUE;
 
 
 NSString *GENDER(GENDER_VALUE gender);
@@ -200,6 +272,9 @@ NSString *EMPLOYMENT_STATUS(EMPLOYMENT_STATUS_VALUE employment);
 NSString *CAREER(CAREER_VALUE career);
 NSString *RACE(RACE_VALUE race);
 NSString *INCOME(INCOME_VALUE income);
+NSString *SPOKEN_LANGUAGE(SPOKEN_LANGUAGE_VALUE spoken_language);
+NSString *ORGANIZATION_ROLE(ORGANIZATION_ROLE_VALUE organization_role);
+NSString *NUMBER_OF_EMPLOYEES(NUMBER_OF_EMPLOYEES_VALUE number_of_employees);
 
 
 @interface UserAttributesDictionary : NSMutableDictionary
@@ -276,6 +351,31 @@ NSString *INCOME(INCOME_VALUE income);
  * @param career_status NSString of class CAREER, for example: CAREER(INFORMATION_SERVICES_AND_DATA)
  */
 - (UserAttributesDictionary *)  setCareer: (NSString *)  career_status;
+
+
+/**
+ * Add user's spoken language
+ *
+ * @param spoken_language NSString of class SPOKEN_LANGUAGE, for example: SPOKEN_LANGUAGE(GREEK)
+ */
+- (UserAttributesDictionary *)  setSpokenLanguage: (NSString *)  spoken_language;
+
+
+/**
+ * Add user's organization role
+ *
+ * @param organization_role NSString of class ORGANIZATION_ROLE, for example: ORGANIZATION_ROLE(OTHER_NON_MANAGEMENT)
+ */
+- (UserAttributesDictionary *)  setOrganizationRole: (NSString *)  organization_role;
+
+/**
+ * Add user's organization number of employees
+ *
+ * @param number_of_employees NSString of class NUMBER_OF_EMPLOYEES, for example: NUMBER_OF_EMPLOYEES(THOUSAND_ONE_TO_FIVE_THOUSANDS)
+ */
+- (UserAttributesDictionary *)  setNumberOfEmployees: (NSString *)  number_of_employees;
+
+
 
 
 /**
