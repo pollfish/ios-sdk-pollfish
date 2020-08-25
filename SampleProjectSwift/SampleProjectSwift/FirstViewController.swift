@@ -7,7 +7,9 @@
 //
 
 import UIKit
+#if canImport(AppTrackingTransparency)
 import AppTrackingTransparency
+#endif
 
 class FirstViewController: UIViewController {
     
@@ -60,16 +62,22 @@ class FirstViewController: UIViewController {
        
         loggingLabel.text="Logging area.."
         
+        #if canImport(AppTrackingTransparency)
         if #available(iOS 14, *) {
             requestIDFAPermission()
         } else {
             pollfishInit()
         }
+        #else
+        pollfishInit()
+        #endif
         
+        loggingLabel.text="Logging area.."
     }
     
     @available(iOS 14, *)
     func requestIDFAPermission() {
+        #if canImport(AppTrackingTransparency)
         ATTrackingManager.requestTrackingAuthorization { status in
             DispatchQueue.main.async {
                 switch status {
@@ -80,6 +88,7 @@ class FirstViewController: UIViewController {
                 }
             }
         }
+        #endif
     }
     
     override func viewDidLoad() {
