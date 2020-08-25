@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AppTrackingTransparency/ATTrackingManager.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIViewController (PermissionExtension)
+@interface UIViewController (AlertExtension)
 
-- (void)requestIDFAPermission:(void (^)(void))permissionGrantedHandler;
+- (void)showNoPermissionAlert;
 
 @end
 

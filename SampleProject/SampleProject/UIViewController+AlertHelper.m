@@ -1,32 +1,16 @@
 //
-//  UIViewController+PermissionHelper.m
+//  UIViewController+AlertHelper.m
 //  SampleProject
 //
 //  Created by Fotis Mitropoulos on 25/8/20.
 //  Copyright © 2020 POLLFISH. All rights reserved.
 //
 
-#import "UIViewController+PermissionHelper.h"
+#import "UIViewController+AlertHelper.h"
 
-@implementation UIViewController (PermissionExtension)
+@implementation UIViewController (AlertExtension)
 
-- (void)requestIDFAPermission:(void (^)(void))permissionGrantedHandler {
-    if (@available(iOS 14, *)) {
-        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
-                    permissionGrantedHandler();
-                } else {
-                    [self showAlert];
-                }
-            });
-          }];
-    } else {
-        permissionGrantedHandler();
-    }
-}
-
-- (void)showAlert {
+- (void)showNoPermissionAlert {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Pollfish"
                                                                              message:@"Unfortunately Pollfish cannot proceed without the Tracking Permission. Please go to your Application Settings and enable \"Allow Tracking\"."
                                                                       preferredStyle:UIAlertControllerStyleAlert];

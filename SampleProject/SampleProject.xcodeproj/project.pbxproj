@@ -20,6 +20,7 @@
 		407A20412289149100CA7849 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A20402289149100CA7849 /* ThirdViewController.m */; };
 		4080DBCE1FC6ED0800CCB1DB /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4074D2371F8CD97100B6D8FB /* pollfish.framework */; };
 		40E837F92134059200E91AB3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E837F82134059200E91AB3 /* WebKit.framework */; };
+		8056078924F53CB100CDD19D /* UIViewController+AlertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8056078824F53CB100CDD19D /* UIViewController+AlertHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		407A203F2289147C00CA7849 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		407A20402289149100CA7849 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		40E837F82134059200E91AB3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8056078624F5380A00CDD19D /* UIViewController+AlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertHelper.h"; sourceTree = "<group>"; };
+		8056078824F53CB100CDD19D /* UIViewController+AlertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertHelper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				405422B91BE8E7A400B6216B /* SecondViewController.m */,
 				407A203F2289147C00CA7849 /* ThirdViewController.h */,
 				407A20402289149100CA7849 /* ThirdViewController.m */,
+				8056078624F5380A00CDD19D /* UIViewController+AlertHelper.h */,
+				8056078824F53CB100CDD19D /* UIViewController+AlertHelper.m */,
 				405422BB1BE8E7A400B6216B /* Main.storyboard */,
 				405422BE1BE8E7A400B6216B /* Assets.xcassets */,
 				405422C01BE8E7A400B6216B /* LaunchScreen.storyboard */,
@@ -190,6 +195,7 @@
 				405422BA1BE8E7A400B6216B /* SecondViewController.m in Sources */,
 				407A20412289149100CA7849 /* ThirdViewController.m in Sources */,
 				405422B41BE8E7A400B6216B /* AppDelegate.m in Sources */,
+				8056078924F53CB100CDD19D /* UIViewController+AlertHelper.m in Sources */,
 				405422B71BE8E7A400B6216B /* FirstViewController.m in Sources */,
 				405422B11BE8E7A400B6216B /* main.m in Sources */,
 			);

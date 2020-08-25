@@ -44,9 +44,38 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishUserRejectedSurvey) name:@"PollfishUserRejectedSurvey" object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initPollfish) name:UIDeviceOrientationDidChangeNotification object:nil];
+    
+    // Check iOS Version
+    if (@available(iOS 14, *)) {
 
-    [self initPollfish];
+        // Request for IDFA permission through ATTracingManager
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                // Check if permission is granted
+                if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
+                    [self initPollfish];
+                } else {
+                    [self showNoPermissionAlert];
+                }
+                
+            });
+            
+          }];
+        
+    } else {
+        [self initPollfish];
+    }
 
+}
+
+- (void)requestIDFAPermission:(void (^)(void))permissionGrantedHandler {
+    if (@available(iOS 14, *)) {
+        
+    } else {
+        permissionGrantedHandler();
+    }
 }
 
 - (void) initPollfish{

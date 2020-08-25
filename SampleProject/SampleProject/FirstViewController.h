@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <Pollfish/Pollfish.h>
+#import <AppTrackingTransparency/ATTrackingManager.h>
+#import "UIViewController+AlertHelper.h"
 
 @interface FirstViewController : UIViewController
 
