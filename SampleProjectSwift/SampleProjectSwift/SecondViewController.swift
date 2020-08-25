@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AppTrackingTransparency
 
 class SecondViewController: UIViewController {
 
@@ -57,7 +58,26 @@ class SecondViewController: UIViewController {
         loggingLabel.text="Logging area.."
         incentivizeBtn.isHidden=true
         
-        pollfishInit()
+        if #available(iOS 14, *) {
+            requestIDFAPermission()
+        } else {
+            pollfishInit()
+        }
+        
+    }
+    
+    @available(iOS 14, *)
+    func requestIDFAPermission() {
+        ATTrackingManager.requestTrackingAuthorization { status in
+            DispatchQueue.main.async {
+                switch status {
+                case .authorized:
+                    self.pollfishInit()
+                default:
+                    self.showNoPermissionAlert()
+                }
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

@@ -8,6 +8,7 @@
 
 
 import UIKit
+import AppTrackingTransparency
 
 class ThirdViewController: UIViewController {
     
@@ -54,7 +55,27 @@ class ThirdViewController: UIViewController {
         loggingLabel.text="Logging area.."
         offerwallBtn.isHidden=true
         
-        pollfishInit()
+        if #available(iOS 14, *) {
+            requestIDFAPermission()
+        } else {
+            pollfishInit()
+        }
+        
+        loggingLabel.text="Logging area.."
+    }
+    
+    @available(iOS 14, *)
+    func requestIDFAPermission() {
+        ATTrackingManager.requestTrackingAuthorization { status in
+            DispatchQueue.main.async {
+                switch status {
+                case .authorized:
+                    self.pollfishInit()
+                default:
+                    self.showNoPermissionAlert()
+                }
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

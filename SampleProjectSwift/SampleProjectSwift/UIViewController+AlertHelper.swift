@@ -7,28 +7,10 @@
 //
 
 import UIKit
-import AppTrackingTransparency
 
 extension UIViewController {
     
-    func requestIDFAPermission(permissionGrantedHandler: @escaping () -> ()) {
-        if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization { status in
-                DispatchQueue.main.async {
-                    switch status {
-                    case .authorized:
-                        permissionGrantedHandler()
-                    default:
-                        self.showAlert()
-                    }
-                }
-            }
-        } else {
-            permissionGrantedHandler()
-        }
-    }
-    
-    private func showAlert() {
+    func showNoPermissionAlert() {
         let alertController = UIAlertController(title: "Pollfish",
                                                 message: "Unfortunately Pollfish cannot proceed without the Tracking Permission. Please go to your Application Settings and enable \"Allow Tracking\".",
                                                 preferredStyle: .alert)

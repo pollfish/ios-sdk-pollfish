@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AppTrackingTransparency
 
 class FirstViewController: UIViewController {
     
@@ -57,10 +58,28 @@ class FirstViewController: UIViewController {
                                                queue: nil,
                                                using:rotateApp)
        
-        
-        pollfishInit();
-        
         loggingLabel.text="Logging area.."
+        
+        if #available(iOS 14, *) {
+            requestIDFAPermission()
+        } else {
+            pollfishInit()
+        }
+        
+    }
+    
+    @available(iOS 14, *)
+    func requestIDFAPermission() {
+        ATTrackingManager.requestTrackingAuthorization { status in
+            DispatchQueue.main.async {
+                switch status {
+                case .authorized:
+                    self.pollfishInit()
+                default:
+                    self.showNoPermissionAlert()
+                }
+            }
+        }
     }
     
     override func viewDidLoad() {

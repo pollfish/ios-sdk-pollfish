@@ -53,5 +53,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSUserTrackingUsageDescription</key>
+    <string>We need this permission to deliver personalized surveys to you.</string>
 </dict>
 </plist>

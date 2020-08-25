@@ -19,6 +19,7 @@
 		40E309A51BEA687200900C4C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E309A41BEA687200900C4C /* CoreTelephony.framework */; };
 		40E309A71BEA687700900C4C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E309A61BEA687700900C4C /* AdSupport.framework */; };
 		40E837FB213406B600E91AB3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E837FA213406B600E91AB3 /* WebKit.framework */; };
+		804C333224F53F280064641D /* UIViewController+AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804C333124F53F280064641D /* UIViewController+AlertHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		40E309A61BEA687700900C4C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		40E837FA213406B600E91AB3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		40F8FABA1E27C5B6003BED5D /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pollfish.framework; path = ../pollfish.framework; sourceTree = "<group>"; };
+		804C333124F53F280064641D /* UIViewController+AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertHelper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				40E309911BEA664600900C4C /* FirstViewController.swift */,
 				40E309931BEA664600900C4C /* SecondViewController.swift */,
 				407A20422289CBC400CA7849 /* ThirdViewController.swift */,
+				804C333124F53F280064641D /* UIViewController+AlertHelper.swift */,
 				40E309951BEA664600900C4C /* Main.storyboard */,
 				40E309981BEA664600900C4C /* Assets.xcassets */,
 				40E3099A1BEA664600900C4C /* LaunchScreen.storyboard */,
@@ -174,6 +177,7 @@
 			files = (
 				40E309941BEA664600900C4C /* SecondViewController.swift in Sources */,
 				40E309901BEA664600900C4C /* AppDelegate.swift in Sources */,
+				804C333224F53F280064641D /* UIViewController+AlertHelper.swift in Sources */,
 				407A20432289CBC500CA7849 /* ThirdViewController.swift in Sources */,
 				40E309921BEA664600900C4C /* FirstViewController.swift in Sources */,
 			);
