@@ -46,6 +46,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initPollfish) name:UIDeviceOrientationDidChangeNotification object:nil];
     
+#if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
     // Check iOS Version
     if (@available(iOS 14, *)) {
 
@@ -64,10 +65,13 @@
             });
             
           }];
-    
+        
     } else {
         [self initPollfish];
     }
+#else
+    [self initPollfish];
+#endif
     
 }
 

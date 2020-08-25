@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Pollfish/Pollfish.h>
-#import <AppTrackingTransparency/ATTrackingManager.h>
+#if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+#endif
 #import "UIViewController+AlertHelper.h"
 
 @interface FirstViewController : UIViewController

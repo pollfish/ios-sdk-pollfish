@@ -38,7 +38,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishUserRejectedSurvey) name:@"PollfishUserRejectedSurvey" object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appRotated) name:UIDeviceOrientationDidChangeNotification object:nil];
-    
+
+#if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
     // Check iOS Version
     if (@available(iOS 14, *)) {
 
@@ -61,6 +62,9 @@
     } else {
         [self initPollfish];
     }
+#else
+    [self initPollfish];
+#endif
     
     _loggingLabel.text=@"Logging area..";
 
