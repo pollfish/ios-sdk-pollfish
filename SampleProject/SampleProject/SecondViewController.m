@@ -45,32 +45,28 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initPollfish) name:UIDeviceOrientationDidChangeNotification object:nil];
     
-#if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
     // Check iOS Version
     if (@available(iOS 14, *)) {
-
+        
+// Check if AppTrackingTransparency framework is included
+#if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
         // Request for IDFA permission through ATTracingManager
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-            
             dispatch_async(dispatch_get_main_queue(), ^{
-                
                 // Check if permission is granted
                 if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
                     [self initPollfish];
                 } else {
                     [self showNoPermissionAlert];
                 }
-                
             });
-            
           }];
-        
-    } else {
-        [self initPollfish];
-    }
 #else
     [self initPollfish];
 #endif
+    } else {
+        [self initPollfish];
+    }
 
 }
 
