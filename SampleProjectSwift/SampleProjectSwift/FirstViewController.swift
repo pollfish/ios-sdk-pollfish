@@ -62,15 +62,12 @@ class FirstViewController: UIViewController {
        
         loggingLabel.text="Logging area.."
         
-        #if canImport(AppTrackingTransparency)
+        
         if #available(iOS 14, *) {
             requestIDFAPermission()
         } else {
             pollfishInit()
         }
-        #else
-        pollfishInit()
-        #endif
         
         loggingLabel.text="Logging area.."
     }
