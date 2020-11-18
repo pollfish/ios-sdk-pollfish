@@ -6,7 +6,6 @@
 
 #import <UIKit/UIKit.h>
 #import "UserAttributesDictionary.h"
-#import <CoreLocation/CoreLocation.h>
 
 
 
@@ -60,7 +59,6 @@ typedef void(^PollfishParamsBlock)(PollfishParams *pollfishParams);
 
 + (void)initWithAPIKey:(NSString*)apiKey andParams:(PollfishParams *) pollfishParams;
 
-
 /**
  * Used from developer to manually show Pollfish
  */
@@ -83,38 +81,11 @@ typedef void(^PollfishParamsBlock)(PollfishParams *pollfishParams);
 + (BOOL) isPollfishPanelOpen;
 
 
-
 /**
  * Used to explicitly destroy Pollfish object if needed
  * Should be called from UI thread
  */
 + (void)destroy;
-
-/**
- Updates user location data anytime after initialization to get better fill rate on surveys
-
- @param lat latitude
- @param lon longitude
- @param acc accuracy
- */
-+ (void)updateLocationWithLatitude:(double)lat andLongitude:(double)lon andHorizontalAccuracy:(double)acc;
-
-/**
- Updates user location data anytime after initialization to get better fill rate on surveys
-
- @param location CLLocation object
- */
-
-+ (void)updateLocationWith:(CLLocation *)location;
-
-/**
- Updates beacon data anytime after initialization to receive beacon enabled surveys
- 
- @param beacon CLBeacon object
- */
-
-+ (void)sendBeaconInfo:(CLBeacon *)beacon;
-
 
 @end
 
