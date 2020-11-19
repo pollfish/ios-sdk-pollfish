@@ -394,43 +394,6 @@ NSString *NUMBER_OF_EMPLOYEES(NUMBER_OF_EMPLOYEES_VALUE number_of_employees);
 
 - (UserAttributesDictionary *)  setIncome: (NSString *)  income;
 
-/**
- * Add user's email
- *
- * @param email User's email id
- */
-- (UserAttributesDictionary *) setEmail: (NSString *) email;
-
-
-
-/**
- * Add user's google id
- *
- * @param google_id User's google id
- */
-- (UserAttributesDictionary *) setGoogleId: (NSString *) google_id;
-
-/**
- * Add user's linkedin id
- *
- * @param linkedin_id User's linkedin id
- */
-- (UserAttributesDictionary *) setLinkedInId: (NSString *) linkedin_id;
-
-/**
- * Add user's twitter id
- *
- * @param twitter_id User's twitter id
- */
-- (UserAttributesDictionary *) setTwitterId: (NSString*) twitter_id;
-
-/**
- * Add user's facebook id
- * 
- * @param facebook_id User's facebook id
- *
- */
-- (UserAttributesDictionary *) setFacebookId: (NSString*) facebook_id;
 
 
 /**
@@ -441,27 +404,6 @@ NSString *NUMBER_OF_EMPLOYEES(NUMBER_OF_EMPLOYEES_VALUE number_of_employees);
  */
 - (UserAttributesDictionary *) setCustomAttributeWithKey: (NSString*) attr_key andValue: (NSString*)  attr_value;
     
-
-/**
- * Add user's phone
- *
- * @param phone User's phone id
- */
-- (UserAttributesDictionary *) setPhone: (NSString *) phone;
-  
-/**
- * Add user's name
- *
- * @param name User's name
- */
-- (UserAttributesDictionary *) setName: (NSString *) name;
-   
-/**
- * Add user's surname
- *
- * @param surname User's surname
- */
-- (UserAttributesDictionary *) setSurname: (NSString *) surname;
 
 
 
