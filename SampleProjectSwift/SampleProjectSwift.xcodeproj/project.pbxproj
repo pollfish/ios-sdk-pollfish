@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		40110ABC1CDA473800245681 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40110ABB1CDA473800245681 /* SystemConfiguration.framework */; };
 		407A20432289CBC500CA7849 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407A20422289CBC400CA7849 /* ThirdViewController.swift */; };
-		4080DBCF1FC6EDBB00CCB1DB /* pollfish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F8FABA1E27C5B6003BED5D /* pollfish.framework */; };
 		40E309901BEA664600900C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3098F1BEA664600900C4C /* AppDelegate.swift */; };
 		40E309921BEA664600900C4C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E309911BEA664600900C4C /* FirstViewController.swift */; };
 		40E309941BEA664600900C4C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E309931BEA664600900C4C /* SecondViewController.swift */; };
@@ -20,7 +19,23 @@
 		40E309A71BEA687700900C4C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E309A61BEA687700900C4C /* AdSupport.framework */; };
 		40E837FB213406B600E91AB3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E837FA213406B600E91AB3 /* WebKit.framework */; };
 		804C333224F53F280064641D /* UIViewController+AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804C333124F53F280064641D /* UIViewController+AlertHelper.swift */; };
+		80EFF9FF25752A980050F4D7 /* pollfish.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EFF9FE25752A980050F4D7 /* pollfish.xcframework */; };
+		80EFFA0025752A980050F4D7 /* pollfish.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80EFF9FE25752A980050F4D7 /* pollfish.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80EFFA0125752A980050F4D7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				80EFFA0025752A980050F4D7 /* pollfish.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40110ABB1CDA473800245681 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -33,12 +48,12 @@
 		40E309981BEA664600900C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40E3099B1BEA664600900C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40E3099D1BEA664600900C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40E309A31BEA682D00900C4C /* SampleProjectSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SampleProjectSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		40E309A41BEA687200900C4C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		40E309A61BEA687700900C4C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		40E837FA213406B600E91AB3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		40F8FABA1E27C5B6003BED5D /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pollfish.framework; path = ../pollfish.framework; sourceTree = "<group>"; };
 		804C333124F53F280064641D /* UIViewController+AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertHelper.swift"; sourceTree = "<group>"; };
+		80EFF9FE25752A980050F4D7 /* pollfish.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = pollfish.xcframework; path = ../pollfish.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +62,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E837FB213406B600E91AB3 /* WebKit.framework in Frameworks */,
-				4080DBCF1FC6EDBB00CCB1DB /* pollfish.framework in Frameworks */,
 				40110ABC1CDA473800245681 /* SystemConfiguration.framework in Frameworks */,
 				40E309A71BEA687700900C4C /* AdSupport.framework in Frameworks */,
 				40E309A51BEA687200900C4C /* CoreTelephony.framework in Frameworks */,
+				80EFF9FF25752A980050F4D7 /* pollfish.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +78,6 @@
 				40110ABB1CDA473800245681 /* SystemConfiguration.framework */,
 				40E309A61BEA687700900C4C /* AdSupport.framework */,
 				40E309A41BEA687200900C4C /* CoreTelephony.framework */,
-				40E309A31BEA682D00900C4C /* SampleProjectSwift-Bridging-Header.h */,
 				40E3098E1BEA664600900C4C /* SampleProjectSwift */,
 				40E3098D1BEA664600900C4C /* Products */,
 				40F8FAB91E27C5B5003BED5D /* Frameworks */,
@@ -97,6 +111,7 @@
 		40F8FAB91E27C5B5003BED5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80EFF9FE25752A980050F4D7 /* pollfish.xcframework */,
 				40E837FA213406B600E91AB3 /* WebKit.framework */,
 				40F8FABA1E27C5B6003BED5D /* pollfish.framework */,
 			);
@@ -113,6 +128,7 @@
 				40E309881BEA664600900C4C /* Sources */,
 				40E309891BEA664600900C4C /* Frameworks */,
 				40E3098A1BEA664600900C4C /* Resources */,
+				80EFFA0125752A980050F4D7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,10 +334,13 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = ../;
 				INFOPLIST_FILE = SampleProjectSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.sampleproject.SampleProjectSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SampleProjectSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -333,10 +352,13 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = ../;
 				INFOPLIST_FILE = SampleProjectSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.sampleproject.SampleProjectSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SampleProjectSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

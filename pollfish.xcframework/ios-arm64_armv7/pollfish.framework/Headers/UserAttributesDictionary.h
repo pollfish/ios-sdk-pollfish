@@ -1,7 +1,7 @@
 //
 //  UserAttributesDictionary.h
 //
-//  Copyright (c) 2017 Pollfish. All rights reserved.
+//  Copyright (c) 2020 Pollfish. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

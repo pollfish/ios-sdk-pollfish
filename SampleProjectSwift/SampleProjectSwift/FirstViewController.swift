@@ -6,6 +6,7 @@
 //  Copyright © 2015 POLLFISH. All rights reserved.
 //
 
+import Pollfish
 import UIKit
 #if canImport(AppTrackingTransparency)
 import AppTrackingTransparency

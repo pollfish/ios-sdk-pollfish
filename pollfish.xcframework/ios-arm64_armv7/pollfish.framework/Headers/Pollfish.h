@@ -1,13 +1,11 @@
 //
 //  Pollfish.h
 //
-//  Copyright (c) 2016 Pollfish. All rights reserved.
+//  Copyright (c) 2020 Pollfish. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "UserAttributesDictionary.h"
-
-
 
 typedef NS_ENUM(NSInteger, PollfishPosition) {
     PollFishPositionTopLeft,
@@ -59,7 +57,6 @@ typedef void(^PollfishParamsBlock)(PollfishParams *pollfishParams);
 
 + (void)initWithAPIKey:(NSString*)apiKey andParams:(PollfishParams *) pollfishParams;
 
-
 /**
  * Used from developer to manually show Pollfish
  */
@@ -88,5 +85,4 @@ typedef void(^PollfishParamsBlock)(PollfishParams *pollfishParams);
 + (void)destroy;
 
 @end
-
 

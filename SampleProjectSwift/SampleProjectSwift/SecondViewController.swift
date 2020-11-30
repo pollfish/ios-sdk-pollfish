@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pollfish
 #if canImport(AppTrackingTransparency)
 import AppTrackingTransparency
 #endif
