@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'Pollfish'
-s.version = '5.5.0'
+s.version = '5.5.1'
 s.platform = :ios, '9.0'
 s.license = { :type => 'Commercial', :text => 'See https://www.pollfish.com/terms/publisher' }
 s.summary = 'Pollfish iOS Survey Monetization SDK'
@@ -17,5 +17,4 @@ s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'WebKit'
 s.weak_frameworks = 'AdSupport'
 s.documentation_url = 'https://www.pollfish.com/docs/ios'
 s.vendored_frameworks = 'pollfish.xcframework'
-
 end

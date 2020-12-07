@@ -57,6 +57,7 @@ typedef void(^PollfishParamsBlock)(PollfishParams *pollfishParams);
 
 + (void)initWithAPIKey:(NSString*)apiKey andParams:(PollfishParams *) pollfishParams;
 
+
 /**
  * Used from developer to manually show Pollfish
  */
