@@ -33,7 +33,6 @@
 #if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
     [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
       dispatch_async(dispatch_get_main_queue(), ^{
-          // Check if permission is granted
           if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
               [self initPollfish];
           } else {
@@ -45,7 +44,7 @@
 }
 
 - (void)initPollfish {
-    PollfishParams *pollfishParams = [[PollfishParams alloc] init:@"af89aaf1-b7d4-46c1-8e91-b2625c2d5dbe"];
+    PollfishParams *pollfishParams = [[PollfishParams alloc] init:@"YOUR_API_KEY"];
     [pollfishParams indicatorPadding:10];
     [pollfishParams indicatorPosition:IndicatorPositionMiddleRight];
     [pollfishParams releaseMode:false];

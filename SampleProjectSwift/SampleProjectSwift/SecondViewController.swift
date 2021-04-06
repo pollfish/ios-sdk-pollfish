@@ -49,7 +49,7 @@ class SecondViewController: UIViewController, PollfishDelegate {
     }
     
     func pollfishInit(){
-        let pollfishParams = PollfishParams("2ae349ab-30b8-4100-bc4d-b33b82e76519")
+        let pollfishParams = PollfishParams("YOUR_API_KEY")
             .rewardMode(true)
             .releaseMode(false)
             .requestUUID("my_id")

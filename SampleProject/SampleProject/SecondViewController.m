@@ -44,7 +44,7 @@
         
     NSLog(@"Pollfish: init");
     
-    PollfishParams *pollfishParams = [[PollfishParams alloc] init:@"af89aaf1-b7d4-46c1-8e91-b2625c2d5dbe"];
+    PollfishParams *pollfishParams = [[PollfishParams alloc] init:@"YOUR_API_KEY"];
     [pollfishParams releaseMode:false];
     [pollfishParams offerwallMode:false];
     [pollfishParams rewardMode:true];

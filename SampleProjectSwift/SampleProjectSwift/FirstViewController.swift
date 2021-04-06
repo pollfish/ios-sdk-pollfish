@@ -47,7 +47,7 @@ class FirstViewController: UIViewController, PollfishDelegate {
     }
     
     func pollfishInit(){
-        let pollfishParams = PollfishParams("2ae349ab-30b8-4100-bc4d-b33b82e76519")
+        let pollfishParams = PollfishParams("YOUR_API_KEY")
             .indicatorPosition(.middleRight)
             .indicatorPadding(10)
             .requestUUID("my_id")
