@@ -1,6 +1,0 @@
-framework module Pollfish {
-  umbrella header "Pollfish.h"
-
-  export *
-  module * { export * }
-}

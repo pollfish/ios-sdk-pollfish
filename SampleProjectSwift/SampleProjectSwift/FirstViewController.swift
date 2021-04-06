@@ -12,57 +12,14 @@ import UIKit
 import AppTrackingTransparency
 #endif
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, PollfishDelegate {
     
     @IBOutlet weak var loggingLabel: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        print("viewWillAppear()")
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "PollfishSurveyNotAvailable"),
-                                               object: nil,
-                                               queue: nil,
-                                               using:pollfishNotAvailable)
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "PollfishUserRejectedSurvey"),
-                                               object: nil,
-                                               queue: nil,
-                                               using:pollfishUserRejectedSurvey)
-    
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "PollfishSurveyReceived"),
-                                               object: nil,
-                                               queue: nil,
-                                               using:pollfishReceived)
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "PollfishSurveyCompleted"),
-                                               object: nil,
-                                               queue: nil,
-                                               using:pollfishCompleted)
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "PollfishOpened"),
-                                               object: nil,
-                                               queue: nil,
-                                               using:pollfishOpened)
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "PollfishClosed"),
-                                               object: nil,
-                                               queue: nil,
-                                               using:pollfishClosed)
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "PollfishUserNotEligible"),
-                                               object: nil,
-                                               queue: nil,
-                                               using:pollfishUsernotEligible)
- 
-        NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification,
-                                               object: nil,
-                                               queue: nil,
-                                               using:rotateApp)
-       
         loggingLabel.text="Logging area.."
-        
         
         if #available(iOS 14, *) {
             requestIDFAPermission()
@@ -89,131 +46,69 @@ class FirstViewController: UIViewController {
         #endif
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        print("viewDidLoad()")
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillDisappear(_ animated:Bool) {
-        super.viewWillDisappear(animated)
-        print("viewWillDisappear()")
-        
-        NotificationCenter.default.removeObserver(self)
-    }
-    
-    // if you support different orientations you should re-init Pollfish on every rotation change
-    
-    func rotateApp(_ notification:Notification){
-        loggingLabel.text="Logging area.."
-       
-        //self.pollfishInit();
-
-    }
-    
-    
     func pollfishInit(){
+        let pollfishParams = PollfishParams("2ae349ab-30b8-4100-bc4d-b33b82e76519")
+            .indicatorPosition(.middleRight)
+            .indicatorPadding(10)
+            .requestUUID("my_id")
         
-        let pollfishParams = PollfishParams ()
-        
-        pollfishParams.indicatorPosition=Int32(PollfishPosition.PollFishPositionMiddleRight.rawValue);
-        
-        pollfishParams.indicatorPadding=10;
-        pollfishParams.releaseMode = false;
-        pollfishParams.offerwallMode = false;
-        pollfishParams.requestUUID="my_id";
-        
-        
-        Pollfish.initWithAPIKey("2ae349ab-30b8-4100-bc4d-b33b82e76519", andParams: pollfishParams);
+        Pollfish.initWith(pollfishParams, delegate: self)
     }
     
-
-    
-    func pollfishNotAvailable(_ notification:Notification) {
+    func pollfishSurveyNotAvailable() {
         print("pollfishNotAvailable")
         
         loggingLabel.text="Pollfish - Survey Not Available"
     }
     
-    
-    func pollfishReceived(_ notification:Notification) {
+    func pollfishSurveyReceived(surveyInfo: SurveyInfo?) {
+        let surveyPrice = surveyInfo?.cpa?.intValue
+        let surveyIR = surveyInfo?.ir?.intValue
+        let surveyLOI = surveyInfo?.loi?.intValue
+        let surveyClass = surveyInfo?.surveyClass
         
-        if let userInfo : [AnyHashable: Any] = (notification.userInfo) {
-      
-            let surveyPrice = userInfo["survey_cpa"]
-            let surveyIR =  userInfo["survey_ir"]
-            let surveyLOI =  userInfo["survey_loi"]
-            let surveyClass =  userInfo["survey_class"]
-            
-            let rewardName = userInfo["reward_name"]
-            let rewardValue = userInfo["reward_value"]
-            
-            print("Pollfish Survey  Received - SurveyPrice: \(String(describing: surveyPrice)) andSurveyIR: \(String(describing: surveyIR)) andSurveyLOI: \(String(describing: surveyLOI)) andSurveyClass: \(String(describing: surveyClass)) andRewardName: \(String(describing: rewardName)) andRewardValue:\(String(describing: rewardValue))")
-            
-            loggingLabel.text="Pollfish Survey Received - SurveyPrice: \(String(describing: surveyPrice)) andSurveyIR: \(String(describing: surveyIR)) andSurveyLOI: \(String(describing: surveyLOI)) andSurveyClass: \(String(describing: surveyClass)) andRewardName: \(String(describing: rewardName)) andRewardValue:\(String(describing: rewardValue))"
-            
-        }else{
-            
-            print("Pollfish Survey Received")
-            
-            loggingLabel.text="Pollfish Survey Received"
-        }
+        let rewardName = surveyInfo?.rewardName
+        let rewardValue = surveyInfo?.rewardValue?.intValue
         
-        //incentivizeBtn.isHidden=false
+        print("Pollfish Survey  Received - SurveyPrice: \(String(describing: surveyPrice)) andSurveyIR: \(String(describing: surveyIR)) andSurveyLOI: \(String(describing: surveyLOI)) andSurveyClass: \(String(describing: surveyClass)) andRewardName: \(String(describing: rewardName)) andRewardValue:\(String(describing: rewardValue))")
+        
+        loggingLabel.text="Pollfish Survey Received - SurveyPrice: \(surveyPrice ?? 0) andSurveyIR: \(surveyIR ?? 0) andSurveyLOI: \(surveyLOI ?? 0) andSurveyClass: \(surveyClass ?? "") andRewardName: \(rewardName ?? "") andRewardValue:\(rewardValue ?? 0)"
     }
     
-    func pollfishOpened(_ notification:Notification) {
+    func pollfishOpened() {
         print("pollfishOpened")
         
         loggingLabel.text="Pollfish - Pollfish Panel Opened"
     }
     
-    func pollfishClosed(_ notification:Notification) {
+    func pollfishClosed() {
         print("pollfishClosed")
-        
-        //loggingLabel.text="Pollfish - Pollfish Panel Closed"
     }
     
-   func pollfishUsernotEligible(_ notification:Notification) {
+    func pollfishUserNotEligible() {
         print("pollfishUsernotEligible")
         
         loggingLabel.text="Pollfish - User Not Eligible"
     }
     
-    func pollfishUserRejectedSurvey(_ notification:Notification) {
+    func pollfishUserRejectedSurvey() {
         print("pollfishUserRejectedSurvey")
         
         loggingLabel.text="Pollfish - User Rejected Survey"
     }
     
-    
-      func pollfishCompleted(_ notification:Notification) {
-
-        if let userInfo : [AnyHashable: Any] = (notification.userInfo) {
-            
-            let surveyPrice = userInfo["survey_cpa"]
-            let surveyIR =  userInfo["survey_ir"]
-            let surveyLOI =  userInfo["survey_loi"]
-            let surveyClass =  userInfo["survey_class"]
-            
-            let rewardName = userInfo["reward_name"]
-            let rewardValue = userInfo["reward_value"]
-            
-            print("Pollfish Survey  Completed - SurveyPrice: \(String(describing: surveyPrice)) andSurveyIR: \(String(describing: surveyIR)) andSurveyLOI: \(String(describing: surveyLOI)) andSurveyClass: \(String(describing: surveyClass)) andRewardName: \(String(describing: rewardName)) andRewardValue:\(String(describing: rewardValue))")
-            
-            loggingLabel.text="Pollfish Survey Completed - SurveyPrice: \(String(describing: surveyPrice)) andSurveyIR: \(String(describing: surveyIR)) andSurveyLOI: \(String(describing: surveyLOI)) andSurveyClass: \(String(describing: surveyClass)) andRewardName: \(String(describing: rewardName)) andRewardValue:\(String(describing: rewardValue))"
-            
-        }else{
-            
-            print("Pollfish Survey Completed")
-            
-            loggingLabel.text="Pollfish Survey Completed"
-        }
+    func pollfishSurveyCompleted(surveyInfo: SurveyInfo) {
+        let surveyPrice = surveyInfo.cpa?.intValue
+        let surveyIR = surveyInfo.ir?.intValue
+        let surveyLOI = surveyInfo.loi?.intValue
+        let surveyClass = surveyInfo.surveyClass
+        
+        let rewardName = surveyInfo.rewardName
+        let rewardValue = surveyInfo.rewardValue?.intValue
+        
+        print("Pollfish Survey  Completed - SurveyPrice: \(String(describing: surveyPrice)) andSurveyIR: \(String(describing: surveyIR)) andSurveyLOI: \(String(describing: surveyLOI)) andSurveyClass: \(String(describing: surveyClass)) andRewardName: \(String(describing: rewardName)) andRewardValue:\(String(describing: rewardValue))")
+        
+        loggingLabel.text = "Pollfish Survey Completed - SurveyPrice: \(surveyPrice ?? 0) andSurveyIR: \(surveyIR ?? 0) andSurveyLOI: \(surveyLOI ?? 0) andSurveyClass: \(surveyClass ?? "") andRewardName: \(rewardName ?? "") andRewardValue:\(rewardValue ?? 0)"
     }
 
     @IBAction func showPollfish(_ sender: AnyObject) {

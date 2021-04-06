@@ -16,35 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishNotAvailable) name:@"PollfishSurveyNotAvailable" object:nil];
-   
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishOpened) name:@"PollfishOpened" object:nil];
-   
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishClosed) name:@"PollfishClosed" object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishUsernotEligible) name:@"PollfishUserNotEligible" object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishCompleted:) name:@"PollfishSurveyCompleted" object:nil];
-   
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishReceived:) name:@"PollfishSurveyReceived" object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pollfishUserRejectedSurvey) name:@"PollfishUserRejectedSurvey" object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appRotated) name:UIDeviceOrientationDidChangeNotification object:nil];
-    
     if (@available(iOS 14, *)) {
         [self requestIDFAPermission];
     } else {
         [self initPollfish];
     }
-
 }
 
 - (void)requestIDFAPermission {
@@ -63,92 +45,65 @@
 }
 
 - (void)initPollfish {
-    PollfishParams *pollfishParams =  [PollfishParams initWith:^(PollfishParams *pollfishParams) {
-        
-        pollfishParams.indicatorPosition=PollFishPositionMiddleRight;
-        pollfishParams.indicatorPadding=10;
-        pollfishParams.releaseMode=false;
-        pollfishParams.offerwallMode= false;
-        pollfishParams.rewardMode=false;
-        pollfishParams.requestUUID=@"my_id";
-    }];
+    PollfishParams *pollfishParams = [[PollfishParams alloc] init:@"af89aaf1-b7d4-46c1-8e91-b2625c2d5dbe"];
+    [pollfishParams indicatorPadding:10];
+    [pollfishParams indicatorPosition:IndicatorPositionMiddleRight];
+    [pollfishParams releaseMode:false];
+    [pollfishParams offerwallMode:false];
+    [pollfishParams rewardMode:false];
+    [pollfishParams requestUUID:@"my_id"];
     
-    [Pollfish initWithAPIKey:@"af89aaf1-b7d4-46c1-8e91-b2625c2d5dbe" andParams:pollfishParams];
+    [Pollfish initWith:pollfishParams delegate:self];
 }
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    
-    [[NSNotificationCenter defaultCenter]  removeObserver: self];
-}
-
-
-// if you support different orientations you should re-init Pollfish on every rotation change
-
--(void) appRotated{
-    _loggingLabel.text=@"Logging area..";
-    
-    // Pollfish re-init
-}
-
-
 
 - (IBAction)showPollfish:(id)sender {
     
     NSLog(@"Pollfish: showPollfish");
     
     [Pollfish show];
-    
 }
 
 - (IBAction)hidePollfish:(id)sender {
-    
     NSLog(@"Pollfish: hidePollfish");
     
     [Pollfish hide];
 }
 
-- (void)pollfishReceived:(NSNotification *)notification
+- (void)pollfishSurveyReceivedWithSurveyInfo:(SurveyInfo *)surveyInfo
 {
-    int surveyPrice = [[[notification userInfo] valueForKey:@"survey_cpa"] intValue];
-    int surveyIR = [[[notification userInfo] valueForKey:@"survey_ir"] intValue];
-    int surveyLOI = [[[notification userInfo] valueForKey:@"survey_loi"] intValue];
+    int surveyPrice = [[surveyInfo cpa] intValue];
+    int surveyIR = [[surveyInfo ir] intValue];
+    int surveyLOI = [[surveyInfo loi] intValue];
     
-    NSString *surveyClass =[[notification userInfo] valueForKey:@"survey_class"];
+    NSString *surveyClass = [surveyInfo surveyClass];
     
-    NSString *rewardName = [[notification userInfo] valueForKey:@"reward_name"];
-    int rewardValue = [[[notification userInfo] valueForKey:@"reward_value"] intValue];
-    
+    NSString *rewardName = [surveyInfo rewardName];
+    int rewardValue = [[surveyInfo rewardValue] intValue];
     
     NSLog(@"Pollfish: Survey Received - SurveyPrice:%d andSurveyIR: %d andSurveyLOI:%d andSurveyClass:%@ andRewardName:%@ andRewardValue:%d", surveyPrice,surveyIR, surveyLOI, surveyClass, rewardName, rewardValue);
     
     _loggingLabel.text=@"Pollfish - Survey Received";
 }
 
-
-- (void)pollfishCompleted:(NSNotification *)notification
+-(void)pollfishSurveyCompletedWithSurveyInfo:(SurveyInfo *)surveyInfo
 {
-    int surveyPrice = [[[notification userInfo] valueForKey:@"survey_cpa"] intValue];
-    int surveyIR = [[[notification userInfo] valueForKey:@"survey_ir"] intValue];
-    int surveyLOI = [[[notification userInfo] valueForKey:@"survey_loi"] intValue];
+    int surveyPrice = [[surveyInfo cpa] intValue];
+    int surveyIR = [[surveyInfo ir] intValue];
+    int surveyLOI = [[surveyInfo loi] intValue];
     
-    NSString *surveyClass =[[notification userInfo] valueForKey:@"survey_class"];
+    NSString *surveyClass = [surveyInfo surveyClass];
     
-    NSString *rewardName = [[notification userInfo] valueForKey:@"reward_name"];
-    int rewardValue = [[[notification userInfo] valueForKey:@"reward_value"] intValue];
-    
+    NSString *rewardName = [surveyInfo rewardName];
+    int rewardValue = [[surveyInfo rewardValue] intValue];
     
     NSLog(@"Pollfish: Survey Completed - SurveyPrice:%d andSurveyIR: %d andSurveyLOI:%d andSurveyClass:%@ andRewardName:%@ andRewardValue:%d", surveyPrice,surveyIR, surveyLOI, surveyClass, rewardName, rewardValue);
     
     _loggingLabel.text=@"Pollfish - Survey Completed";
 }
 
-
 - (void)pollfishOpened
 {
     NSLog(@"Pollfish: Survey Opened");
-    
     
     _loggingLabel.text=@"Pollfish - Survey Panel Opened";
 }
@@ -157,7 +112,6 @@
 {
     NSLog(@"Pollfish: Survey Closed");
     
-    
     _loggingLabel.text=@"Pollfish - Survey Panel Closed";
 }
 
@@ -165,14 +119,12 @@
 {
     NSLog(@"Pollfish: Survey Not Available");
     
-    
     _loggingLabel.text=@"Pollfish - Survey Not Available";
 }
 
 - (void) pollfishUserRejectedSurvey
 {
     NSLog(@"Pollfish: User Rejected Survey");
-    
     
     _loggingLabel.text=@"Pollfish - User Rejected Survey";
 }
@@ -184,6 +136,5 @@
     
     _loggingLabel.text=@"Pollfish - User Not Eligible";
 }
-
 
 @end

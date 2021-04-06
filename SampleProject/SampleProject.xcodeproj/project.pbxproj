@@ -20,8 +20,7 @@
 		407A20412289149100CA7849 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A20402289149100CA7849 /* ThirdViewController.m */; };
 		40E837F92134059200E91AB3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E837F82134059200E91AB3 /* WebKit.framework */; };
 		8056078924F53CB100CDD19D /* UIViewController+AlertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8056078824F53CB100CDD19D /* UIViewController+AlertHelper.m */; };
-		80EFFA0425752B6D0050F4D7 /* pollfish.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EFFA0325752B6D0050F4D7 /* pollfish.xcframework */; };
-		80EFFA0525752B6D0050F4D7 /* pollfish.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80EFFA0325752B6D0050F4D7 /* pollfish.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		80AB75A6261C67CB0044FD75 /* Pollfish.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB75A5261C67CB0044FD75 /* Pollfish.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +30,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				80EFFA0525752B6D0050F4D7 /* pollfish.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,13 +52,12 @@
 		405422C31BE8E7A400B6216B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		405422CB1BE8E8B300B6216B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		405422CD1BE8E8F700B6216B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		4074D2371F8CD97100B6D8FB /* pollfish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pollfish.framework; path = ../pollfish.framework; sourceTree = "<group>"; };
 		407A203F2289147C00CA7849 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		407A20402289149100CA7849 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		40E837F82134059200E91AB3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8056078624F5380A00CDD19D /* UIViewController+AlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertHelper.h"; sourceTree = "<group>"; };
 		8056078824F53CB100CDD19D /* UIViewController+AlertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertHelper.m"; sourceTree = "<group>"; };
-		80EFFA0325752B6D0050F4D7 /* pollfish.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = pollfish.xcframework; path = ../pollfish.xcframework; sourceTree = "<group>"; };
+		80AB75A5261C67CB0044FD75 /* Pollfish.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Pollfish.xcframework; path = ../Pollfish.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +69,7 @@
 				40110ABA1CDA469000245681 /* SystemConfiguration.framework in Frameworks */,
 				405422CE1BE8E8F700B6216B /* AdSupport.framework in Frameworks */,
 				405422CC1BE8E8B300B6216B /* CoreTelephony.framework in Frameworks */,
-				80EFFA0425752B6D0050F4D7 /* pollfish.xcframework in Frameworks */,
+				80AB75A6261C67CB0044FD75 /* Pollfish.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +79,8 @@
 		403CACB71EF00A0F00D9DFE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				80EFFA0325752B6D0050F4D7 /* pollfish.xcframework */,
+				80AB75A5261C67CB0044FD75 /* Pollfish.xcframework */,
 				40E837F82134059200E91AB3 /* WebKit.framework */,
-				4074D2371F8CD97100B6D8FB /* pollfish.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

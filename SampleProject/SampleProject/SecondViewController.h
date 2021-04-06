@@ -13,7 +13,7 @@
 #endif
 #import "UIViewController+AlertHelper.h"
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController<PollfishDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *incentivizeBtn;
 @property (weak, nonatomic) IBOutlet UILabel *loggingLabel;
