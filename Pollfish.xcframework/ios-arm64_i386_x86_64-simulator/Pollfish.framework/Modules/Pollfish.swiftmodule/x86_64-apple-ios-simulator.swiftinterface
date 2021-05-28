@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Pollfish
 import AVKit
 import AdSupport
@@ -15,8 +15,8 @@ import WebKit
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public typealias SpokenLanguages = [SpokenLanguage]
 @_inheritsConvenienceInitializers @objc public class UserProperties : ObjectiveC.NSObject {
@@ -70,8 +70,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case female = 1
   case male = 2
   case other = 3
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -84,8 +84,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case separated = 4
   case widowed = 5
   case preferNotToSay = 6
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -99,8 +99,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case five = 5
   case sixOrMore = 6
   case preferNotToSay = 7
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -112,8 +112,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case vocationalTechnicalCollege = 3
   case university = 4
   case postGraduate = 5
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -129,8 +129,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case retired = 7
   case unableToWork = 8
   case other = 9
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -178,8 +178,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case shippingDistribution = 39
   case personalServices = 40
   case security = 41
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -194,8 +194,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case multiracial = 6
   case other = 7
   case preferNotToSay = 8
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -209,8 +209,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case highII = 5
   case highIII = 6
   case preferNotToSay = 7
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -259,8 +259,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case pashto = 41
   case estonian = 42
   case uzbek = 43
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -291,8 +291,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case otherNonManagement = 22
   case notWork = 23
   case preferNotToSay = 24
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -311,8 +311,8 @@ public typealias SpokenLanguages = [SpokenLanguage]
   case greaterThanFiveThousands = 10
   case doNotWork = 11
   case preferNotToSay = 12
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -345,8 +345,8 @@ public enum UserProperty : Swift.Equatable {
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public class PollfishParams : ObjectiveC.NSObject {
   final public let apiKey: Swift.String
@@ -416,16 +416,16 @@ public enum UserProperty : Swift.Equatable {
   @objc public func clickId(_ clickId: Swift.String) -> PollfishParams
   @discardableResult
   @objc public func platform(_ platform: Platform) -> PollfishParams
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public enum SurveyFormat : Swift.Int {
   case basic = 0
   case playful = 1
   case random = 2
   case thirdParty = 3
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -443,18 +443,18 @@ extension Pollfish {
 }
 @objc public enum IndicatorPosition : Swift.Int {
   case topLeft
-  case middleLeft
-  case bottomLeft
   case topRight
+  case middleLeft
   case middleRight
+  case bottomLeft
   case bottomRight
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-@objc public protocol PollfishDelegate : AnyObject {
+@objc public protocol PollfishDelegate {
   @objc optional func pollfishOpened()
   @objc optional func pollfishClosed()
   @objc optional func pollfishSurveyReceived(surveyInfo: SurveyInfo?)
@@ -470,12 +470,12 @@ extension Pollfish {
   case unity = 3
   case adMob = 4
   case moPub = 5
-  case other = 6
+  case reactNative = 6
   public var description: Swift.String {
     get
   }
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
