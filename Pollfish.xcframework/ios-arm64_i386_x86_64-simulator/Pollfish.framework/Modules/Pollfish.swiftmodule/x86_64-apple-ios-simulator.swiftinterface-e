@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Pollfish
 import AVKit
 import AdSupport
@@ -389,6 +389,9 @@ public enum UserProperty : Swift.Equatable {
   public var platform: Pollfish.Platform? {
     get
   }
+  public var userId: Swift.String? {
+    get
+  }
   @objc public init(_ apiKey: Swift.String)
   @discardableResult
   @objc public func rewardMode(_ rewardMode: Swift.Bool) -> Pollfish.PollfishParams
@@ -416,6 +419,8 @@ public enum UserProperty : Swift.Equatable {
   @objc public func clickId(_ clickId: Swift.String) -> Pollfish.PollfishParams
   @discardableResult
   @objc public func platform(_ platform: Pollfish.Platform) -> Pollfish.PollfishParams
+  @discardableResult
+  @objc public func userId(_ userId: Swift.String) -> Pollfish.PollfishParams
   @objc override dynamic public init()
   @objc deinit
 }
