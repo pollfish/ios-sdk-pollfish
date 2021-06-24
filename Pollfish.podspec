@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'Pollfish'
-s.version = '6.0.2'
+s.version = '6.0.3'
 s.platform = :ios, '9.0'
 s.license = { :type => 'Commercial', :text => 'See https://www.pollfish.com/terms/publisher' }
 s.summary = 'Pollfish iOS Survey Monetization SDK'

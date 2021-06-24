@@ -389,9 +389,6 @@ public enum UserProperty : Swift.Equatable {
   public var platform: Pollfish.Platform? {
     get
   }
-  public var userId: Swift.String? {
-    get
-  }
   @objc public init(_ apiKey: Swift.String)
   @discardableResult
   @objc public func rewardMode(_ rewardMode: Swift.Bool) -> Pollfish.PollfishParams
@@ -419,8 +416,6 @@ public enum UserProperty : Swift.Equatable {
   @objc public func clickId(_ clickId: Swift.String) -> Pollfish.PollfishParams
   @discardableResult
   @objc public func platform(_ platform: Pollfish.Platform) -> Pollfish.PollfishParams
-  @discardableResult
-  @objc public func userId(_ userId: Swift.String) -> Pollfish.PollfishParams
   @objc override dynamic public init()
   @objc deinit
 }
