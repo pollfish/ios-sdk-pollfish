@@ -11,6 +11,8 @@ import SystemConfiguration
 import UIKit
 import WebKit
 @objc public class RewardInfo : ObjectiveC.NSObject {
+  final public let rewardName: Swift.String
+  final public let rewardConversion: Swift.Float
   @objc public init?(rewardName: Swift.String, rewardConversion: Swift.Float)
   @objc override dynamic public var description: Swift.String {
     @objc get
