@@ -19,7 +19,8 @@
 		40E309A71BEA687700900C4C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E309A61BEA687700900C4C /* AdSupport.framework */; };
 		40E837FB213406B600E91AB3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E837FA213406B600E91AB3 /* WebKit.framework */; };
 		804C333224F53F280064641D /* UIViewController+AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804C333124F53F280064641D /* UIViewController+AlertHelper.swift */; };
-		80AB75A8261C759B0044FD75 /* Pollfish.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB75A7261C759B0044FD75 /* Pollfish.xcframework */; };
+		80B4531C26FE18BF00F324AC /* Pollfish.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB75A7261C759B0044FD75 /* Pollfish.xcframework */; };
+		80B4531D26FE18BF00F324AC /* Pollfish.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB75A7261C759B0044FD75 /* Pollfish.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				80B4531D26FE18BF00F324AC /* Pollfish.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +64,7 @@
 				40110ABC1CDA473800245681 /* SystemConfiguration.framework in Frameworks */,
 				40E309A71BEA687700900C4C /* AdSupport.framework in Frameworks */,
 				40E309A51BEA687200900C4C /* CoreTelephony.framework in Frameworks */,
-				80AB75A8261C759B0044FD75 /* Pollfish.xcframework in Frameworks */,
+				80B4531C26FE18BF00F324AC /* Pollfish.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = ../;
 				INFOPLIST_FILE = SampleProjectSwift/Info.plist;
@@ -336,6 +339,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.sampleproject.SampleProjectSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
@@ -345,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = ../;
 				INFOPLIST_FILE = SampleProjectSwift/Info.plist;
@@ -354,6 +359,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.sampleproject.SampleProjectSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};

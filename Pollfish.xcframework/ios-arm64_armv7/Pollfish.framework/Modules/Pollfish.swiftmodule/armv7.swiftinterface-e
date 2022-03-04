@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Pollfish
 import AVKit
 import AdSupport
@@ -10,6 +10,7 @@ import Swift
 import SystemConfiguration
 import UIKit
 import WebKit
+import _Concurrency
 @objc public class RewardInfo : ObjectiveC.NSObject {
   final public let rewardName: Swift.String
   final public let rewardConversion: Swift.Float
@@ -17,7 +18,6 @@ import WebKit
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 public typealias SpokenLanguages = [Pollfish.SpokenLanguage]
@@ -347,7 +347,6 @@ public enum UserProperty : Swift.Equatable {
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class PollfishParams : ObjectiveC.NSObject {
@@ -423,7 +422,6 @@ public enum UserProperty : Swift.Equatable {
   @objc public func platform(_ platform: Pollfish.Platform) -> Pollfish.PollfishParams
   @discardableResult
   @objc public func monitorOrientationChanges(_ monitorOrientationChanges: Swift.Bool) -> Pollfish.PollfishParams
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum SurveyFormat : Swift.Int {
@@ -439,9 +437,8 @@ public enum UserProperty : Swift.Equatable {
 }
 @_hasMissingDesignatedInitializers @objc public class Pollfish : ObjectiveC.NSObject {
   @objc deinit
-  @objc override dynamic public init()
 }
-extension Pollfish {
+extension Pollfish.Pollfish {
   @objc public static func initWith(_ params: Pollfish.PollfishParams, delegate: Pollfish.PollfishDelegate? = nil)
   @objc public static func show()
   @objc public static func hide()
@@ -478,6 +475,7 @@ extension Pollfish {
   case adMob = 4
   case moPub = 5
   case reactNative = 6
+  case max = 7
   public var description: Swift.String {
     get
   }
@@ -487,7 +485,7 @@ extension Pollfish {
     get
   }
 }
-extension UIDeviceOrientation : Swift.CustomStringConvertible {
+extension UIKit.UIDeviceOrientation : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }

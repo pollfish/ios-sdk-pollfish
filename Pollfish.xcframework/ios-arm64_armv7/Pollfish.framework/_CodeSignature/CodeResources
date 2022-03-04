@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		kNfC6m+Kq79eqUKFGRgFWhcTG+E=
+		7QbJ4BzgdPPkcwKlL1OXmtyW4qY=
 		</data>
 		<key>Headers/Pollfish-Swift.h</key>
 		<data>
-		inCzEo4emj9+BcRePn5yl7SAyKM=
+		Lh3RA4uPQr0KbLtIrqk5mUe4Hec=
 		</data>
 		<key>Headers/Pollfish.h</key>
 		<data>
@@ -18,67 +18,67 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7HqaUWb+osF2ghA6z1sQiXSaKn8=
+		7ZDB2CmMWBVZkjcDWcGNUpcgZAg=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm.swiftdoc</key>
 		<data>
-		3qYHPhMra3so4ndODosOD7aNEcM=
+		CEmKkhOw15v5eEMBeJXwh/noxhk=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm.swiftinterface</key>
 		<data>
-		i3MXlQ6Mj2aSXPV0WtgPp8nJ4bE=
+		LS/EF530RsW2YuvEKB7nQf3Ime0=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm.swiftmodule</key>
 		<data>
-		J7Uh/1F88ogbR9t7S0Lxai46s3c=
+		kpcGtL3z4eovniLcUmI1p1Yj6YY=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		kgcjtlDmnDHvwlqYm6IeG5clNrI=
+		l57ySf2kTR/J2Yb1JrK5mDcDstc=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		7sBN7Ta6UJvgWqDHDDdPiMy+G54=
+		PO7495O/XmA6XlbZHXX8+7Qnyhw=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GIi9mdTUTRkQT3MVN7CClhBw0sE=
+		pV9DhZeFvuXyFyQJCewXCdKDVpU=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		kgcjtlDmnDHvwlqYm6IeG5clNrI=
+		l57ySf2kTR/J2Yb1JrK5mDcDstc=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		7sBN7Ta6UJvgWqDHDDdPiMy+G54=
+		PO7495O/XmA6XlbZHXX8+7Qnyhw=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		GIi9mdTUTRkQT3MVN7CClhBw0sE=
+		pV9DhZeFvuXyFyQJCewXCdKDVpU=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		3qYHPhMra3so4ndODosOD7aNEcM=
+		CEmKkhOw15v5eEMBeJXwh/noxhk=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
-		i3MXlQ6Mj2aSXPV0WtgPp8nJ4bE=
+		LS/EF530RsW2YuvEKB7nQf3Ime0=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		J7Uh/1F88ogbR9t7S0Lxai46s3c=
+		kpcGtL3z4eovniLcUmI1p1Yj6YY=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		3qYHPhMra3so4ndODosOD7aNEcM=
+		CEmKkhOw15v5eEMBeJXwh/noxhk=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/armv7.swiftinterface</key>
 		<data>
-		i3MXlQ6Mj2aSXPV0WtgPp8nJ4bE=
+		LS/EF530RsW2YuvEKB7nQf3Ime0=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		J7Uh/1F88ogbR9t7S0Lxai46s3c=
+		kpcGtL3z4eovniLcUmI1p1Yj6YY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,22 +95,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kNfC6m+Kq79eqUKFGRgFWhcTG+E=
+			7QbJ4BzgdPPkcwKlL1OXmtyW4qY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hh4G3by3YjzWbQ+5NTX6SMuFGN5p8YV0MqFe/4BQqXg=
+			vf1s0K79V51GOs74fbKk+X8Y1x0kj46EJEx83ArOhg4=
 			</data>
 		</dict>
 		<key>Headers/Pollfish-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			inCzEo4emj9+BcRePn5yl7SAyKM=
+			Lh3RA4uPQr0KbLtIrqk5mUe4Hec=
 			</data>
 			<key>hash2</key>
 			<data>
-			9Q/Qk7OIyYKLNXHA+UBbXP8c54o1naAGrcqhgae2ZMY=
+			YixlLeKPppbmun2pTlfrBVJs6N0BbOfs1jekWSTWucU=
 			</data>
 		</dict>
 		<key>Headers/Pollfish.h</key>
@@ -128,165 +128,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3qYHPhMra3so4ndODosOD7aNEcM=
+			CEmKkhOw15v5eEMBeJXwh/noxhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			D85jNm7c5z9U6t2ib8d1nGgep+i3+BEEBFsjjaGcIUw=
+			FDGD7MYI3x870kHeW+lFUQFKHDzKVW/NubSueV7yISQ=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/arm.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i3MXlQ6Mj2aSXPV0WtgPp8nJ4bE=
+			LS/EF530RsW2YuvEKB7nQf3Ime0=
 			</data>
 			<key>hash2</key>
 			<data>
-			M1Y921R60W4XvqsNB1rcYGfVHVkfeH9DM61hx1wTAHU=
+			o5R7qXVBiNAwFCE7U/h4F/qPkG9dcLlTKtMHW9A2aMY=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J7Uh/1F88ogbR9t7S0Lxai46s3c=
+			kpcGtL3z4eovniLcUmI1p1Yj6YY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qhe2H6AWzAiEHdqde0YG95Cf0ymfDXR3B4ITnF1q2xU=
+			1PEm37RjF5TcseyFPefmX3Bkjo4XPu5CdRo6tso/1aM=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kgcjtlDmnDHvwlqYm6IeG5clNrI=
+			l57ySf2kTR/J2Yb1JrK5mDcDstc=
 			</data>
 			<key>hash2</key>
 			<data>
-			eyVhnzr0uOT1PTFj4UaKHHBRGlOmN6O98gxVF5+DAT8=
+			bhhBf8pJ3+bbwb3HPrO7Q/V6ykFS1TZxbVgLA1Eg2Ug=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7sBN7Ta6UJvgWqDHDDdPiMy+G54=
+			PO7495O/XmA6XlbZHXX8+7Qnyhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			oua5atiAziidPkQrheQgj4Ufnd6NhursVjpYmIUvjE0=
+			TrBqFV0Rv1WAutpLBKmfob2DkKB9zuYC2HawZKzDW/8=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GIi9mdTUTRkQT3MVN7CClhBw0sE=
+			pV9DhZeFvuXyFyQJCewXCdKDVpU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZKtEopAjdHhqX0H27B6rucpS1bGEe3XdA5F6VablQ1A=
+			x9N6ILR97Ip3BttIq1KDpvymdF3JAmCQS+7jWIAv+Ok=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kgcjtlDmnDHvwlqYm6IeG5clNrI=
+			l57ySf2kTR/J2Yb1JrK5mDcDstc=
 			</data>
 			<key>hash2</key>
 			<data>
-			eyVhnzr0uOT1PTFj4UaKHHBRGlOmN6O98gxVF5+DAT8=
+			bhhBf8pJ3+bbwb3HPrO7Q/V6ykFS1TZxbVgLA1Eg2Ug=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7sBN7Ta6UJvgWqDHDDdPiMy+G54=
+			PO7495O/XmA6XlbZHXX8+7Qnyhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			oua5atiAziidPkQrheQgj4Ufnd6NhursVjpYmIUvjE0=
+			TrBqFV0Rv1WAutpLBKmfob2DkKB9zuYC2HawZKzDW/8=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GIi9mdTUTRkQT3MVN7CClhBw0sE=
+			pV9DhZeFvuXyFyQJCewXCdKDVpU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZKtEopAjdHhqX0H27B6rucpS1bGEe3XdA5F6VablQ1A=
+			x9N6ILR97Ip3BttIq1KDpvymdF3JAmCQS+7jWIAv+Ok=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3qYHPhMra3so4ndODosOD7aNEcM=
+			CEmKkhOw15v5eEMBeJXwh/noxhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			D85jNm7c5z9U6t2ib8d1nGgep+i3+BEEBFsjjaGcIUw=
+			FDGD7MYI3x870kHeW+lFUQFKHDzKVW/NubSueV7yISQ=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i3MXlQ6Mj2aSXPV0WtgPp8nJ4bE=
+			LS/EF530RsW2YuvEKB7nQf3Ime0=
 			</data>
 			<key>hash2</key>
 			<data>
-			M1Y921R60W4XvqsNB1rcYGfVHVkfeH9DM61hx1wTAHU=
+			o5R7qXVBiNAwFCE7U/h4F/qPkG9dcLlTKtMHW9A2aMY=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J7Uh/1F88ogbR9t7S0Lxai46s3c=
+			kpcGtL3z4eovniLcUmI1p1Yj6YY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qhe2H6AWzAiEHdqde0YG95Cf0ymfDXR3B4ITnF1q2xU=
+			1PEm37RjF5TcseyFPefmX3Bkjo4XPu5CdRo6tso/1aM=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3qYHPhMra3so4ndODosOD7aNEcM=
+			CEmKkhOw15v5eEMBeJXwh/noxhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			D85jNm7c5z9U6t2ib8d1nGgep+i3+BEEBFsjjaGcIUw=
+			FDGD7MYI3x870kHeW+lFUQFKHDzKVW/NubSueV7yISQ=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/armv7.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i3MXlQ6Mj2aSXPV0WtgPp8nJ4bE=
+			LS/EF530RsW2YuvEKB7nQf3Ime0=
 			</data>
 			<key>hash2</key>
 			<data>
-			M1Y921R60W4XvqsNB1rcYGfVHVkfeH9DM61hx1wTAHU=
+			o5R7qXVBiNAwFCE7U/h4F/qPkG9dcLlTKtMHW9A2aMY=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J7Uh/1F88ogbR9t7S0Lxai46s3c=
+			kpcGtL3z4eovniLcUmI1p1Yj6YY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qhe2H6AWzAiEHdqde0YG95Cf0ymfDXR3B4ITnF1q2xU=
+			1PEm37RjF5TcseyFPefmX3Bkjo4XPu5CdRo6tso/1aM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
