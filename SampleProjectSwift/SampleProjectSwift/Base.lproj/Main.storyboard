@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Offerwall-->
         <scene sceneID="JWo-HY-NsK">
             <objects>
-                <viewController id="CmY-Zt-ncc" customClass="ThirdViewController" customModule="SampleProjectSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CmY-Zt-ncc" customClass="OfferwallViewController" customModule="SampleProjectSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qOV-EN-aJA"/>
                         <viewControllerLayoutGuide type="bottom" id="rCD-8q-dB6"/>
@@ -25,10 +23,10 @@
                                 <rect key="frame" x="28" y="401" width="366" height="14"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeU-oz-avl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeU-oz-avl">
                                 <rect key="frame" x="81" y="443" width="260" height="44"/>
                                 <color key="backgroundColor" red="0.1959706182" green="0.1959706182" blue="0.1959706182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -57,12 +55,12 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="394" id="nbD-ci-1tE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="nbD-ci-1tE"/>
                                         <exclude reference="XlN-SY-EPI"/>
+                                        <exclude reference="nbD-ci-1tE"/>
                                     </mask>
                                 </variation>
                             </label>
@@ -89,120 +87,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMc-Py-6XF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72.463768115942031" y="-678.34821428571422"/>
-        </scene>
-        <!--Show/Hide-->
-        <scene sceneID="hNz-n2-bh7">
-            <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="SampleProjectSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59H-NF-rYH">
-                                <rect key="frame" x="44.5" y="104" width="325" height="78"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kue-yC-en8">
-                                        <rect key="frame" x="18" y="17" width="105" height="44"/>
-                                        <color key="backgroundColor" red="0.1959706182" green="0.1959706182" blue="0.1959706182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="18n-Xe-pH8"/>
-                                            <constraint firstAttribute="height" constant="44" id="OYb-qG-8yK"/>
-                                        </constraints>
-                                        <state key="normal" title="Show">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="showPollfish:" destination="9pv-A4-QxB" eventType="touchUpInside" id="d2e-rm-xq3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE7-Bx-ZHc">
-                                        <rect key="frame" x="200" y="17" width="105" height="44"/>
-                                        <color key="backgroundColor" red="0.1959706182" green="0.1959706182" blue="0.1959706182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="eBF-3X-l0u"/>
-                                            <constraint firstAttribute="height" constant="44" id="f2H-cf-hX6"/>
-                                        </constraints>
-                                        <state key="normal" title="Hide">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="hidePollfish:" destination="9pv-A4-QxB" eventType="touchUpInside" id="WPX-su-8EI"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="kue-yC-en8" firstAttribute="centerY" secondItem="59H-NF-rYH" secondAttribute="centerY" id="1lh-Nu-HSH"/>
-                                    <constraint firstAttribute="trailing" secondItem="qE7-Bx-ZHc" secondAttribute="trailing" constant="20" id="5u1-c9-VSD"/>
-                                    <constraint firstAttribute="height" constant="78" id="AKU-np-ujZ"/>
-                                    <constraint firstAttribute="width" constant="325" id="Ch6-22-FBP"/>
-                                    <constraint firstItem="kue-yC-en8" firstAttribute="leading" secondItem="59H-NF-rYH" secondAttribute="leading" constant="18" id="Q1r-Nz-w7H"/>
-                                    <constraint firstItem="qE7-Bx-ZHc" firstAttribute="centerY" secondItem="59H-NF-rYH" secondAttribute="centerY" id="S68-kD-IZf"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Hello Pollfish! This screen demonstrates how you can use Pollfish in your app." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tcW-N3-v3e">
-                                <rect key="frame" x="25" y="434" width="364" height="28"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logging area..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJl-Pe-SPX">
-                                <rect key="frame" x="168.5" y="407" width="77.5" height="12"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="8hy-zf-HkI"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="394" id="Tl2-7f-o1c"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="8hy-zf-HkI"/>
-                                        <exclude reference="Tl2-7f-o1c"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="tcW-N3-v3e" firstAttribute="top" secondItem="cJl-Pe-SPX" secondAttribute="bottom" constant="10" id="Btb-tP-j1f"/>
-                            <constraint firstItem="tcW-N3-v3e" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="TEE-Ef-Swp"/>
-                            <constraint firstItem="tcW-N3-v3e" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="ZgU-sS-9go"/>
-                            <constraint firstItem="59H-NF-rYH" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="asz-Ao-2h6"/>
-                            <constraint firstItem="cJl-Pe-SPX" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="cbO-Nd-59C"/>
-                            <constraint firstItem="59H-NF-rYH" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="60" id="d50-OA-xPb"/>
-                            <constraint firstItem="tcW-N3-v3e" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="eE5-z4-sjp"/>
-                            <constraint firstItem="tcW-N3-v3e" firstAttribute="top" secondItem="cJl-Pe-SPX" secondAttribute="bottom" constant="15" id="hsc-7f-Ocr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tcW-N3-v3e" secondAttribute="trailing" constant="5" id="n9v-Yh-Zjb"/>
-                            <constraint firstItem="cJl-Pe-SPX" firstAttribute="top" secondItem="tcW-N3-v3e" secondAttribute="bottom" constant="10" id="wJ5-HC-tcZ"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Btb-tP-j1f"/>
-                                <exclude reference="wJ5-HC-tcZ"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Show/Hide" image="first" id="acW-dT-cKf" userLabel="Show/Hide"/>
-                    <connections>
-                        <outlet property="loggingLabel" destination="cJl-Pe-SPX" id="9Bh-ki-LcY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="716" y="-324"/>
         </scene>
         <!--Rewarded Survey-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="SampleProjectSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="RewardedSurveyViewContoller" customModule="SampleProjectSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -211,7 +101,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eR-bG-NzY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eR-bG-NzY">
                                 <rect key="frame" x="77" y="436" width="260" height="44"/>
                                 <color key="backgroundColor" red="0.1959706182" green="0.1959706182" blue="0.1959706182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -240,7 +130,7 @@
                                     <constraint firstAttribute="height" constant="21" id="gDe-pX-s6s"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -253,7 +143,7 @@
                                 <rect key="frame" x="25" y="389" width="364" height="28"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -297,7 +187,6 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="CmY-Zt-ncc" kind="relationship" relationship="viewControllers" id="nKM-su-eNx"/>
                     </connections>
@@ -310,5 +199,8 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

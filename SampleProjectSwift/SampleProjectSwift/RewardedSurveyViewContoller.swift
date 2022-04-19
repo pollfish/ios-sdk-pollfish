@@ -12,7 +12,7 @@ import Pollfish
 import AppTrackingTransparency
 #endif
 
-class SecondViewController: UIViewController, PollfishDelegate {
+class RewardedSurveyViewContoller: UIViewController, PollfishDelegate {
 
     @IBOutlet weak var incentivizeBtn: UIButton!
     @IBOutlet weak var loggingLabel: UILabel!
@@ -20,8 +20,8 @@ class SecondViewController: UIViewController, PollfishDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        loggingLabel.text="Logging area.."
-        incentivizeBtn.isHidden=true
+        loggingLabel.text = "Logging area.."
+        incentivizeBtn.isHidden = true
         
         if #available(iOS 14, *) {
             requestIDFAPermission()
@@ -52,7 +52,6 @@ class SecondViewController: UIViewController, PollfishDelegate {
         let pollfishParams = PollfishParams("YOUR_API_KEY")
             .rewardMode(true)
             .releaseMode(false)
-            .requestUUID("my_id")
                 
         Pollfish.initWith(pollfishParams, delegate: self)
     }
@@ -79,13 +78,13 @@ class SecondViewController: UIViewController, PollfishDelegate {
         incentivizeBtn.setTitle("Earn \(rewardValue ?? 0) \(rewardName ?? "") by completing a survey"
             , for: UIControl.State.normal)
         
-        incentivizeBtn.isHidden=false
+        incentivizeBtn.isHidden = false
     }
     
     func pollfishOpened() {
         print("pollfishOpened")
         
-        loggingLabel.text="Pollfish - Pollfish Panel Opened"
+        loggingLabel.text = "Pollfish - Pollfish Panel Opened"
     }
     
     func pollfishClosed() {
@@ -95,15 +94,15 @@ class SecondViewController: UIViewController, PollfishDelegate {
     func pollfishUserNotEligible() {
         print("pollfishUsernotEligible")
         
-        loggingLabel.text="Pollfish - User Not Eligible"
-        incentivizeBtn.isHidden=true
+        loggingLabel.text = "Pollfish - User Not Eligible"
+        incentivizeBtn.isHidden = true
     }
     
     func pollfishUserRejectedSurvey() {
         print("pollfishUserRejectedSurvey")
         
-        loggingLabel.text="Pollfish - User Rejected Survey"
-        incentivizeBtn.isHidden=true
+        loggingLabel.text = "Pollfish - User Rejected Survey"
+        incentivizeBtn.isHidden = true
     }
     
     func pollfishSurveyCompleted(surveyInfo: SurveyInfo) {
@@ -128,12 +127,6 @@ class SecondViewController: UIViewController, PollfishDelegate {
         print("showPollfish")
         
         Pollfish.show();
-    }
-    
-    @IBAction func hidePollfish(_ sender: AnyObject) {
-        print("hidePollfish")
-        
-        Pollfish.hide();
     }
     
 }

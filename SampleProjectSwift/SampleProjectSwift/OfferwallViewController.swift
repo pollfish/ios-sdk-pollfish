@@ -1,33 +1,36 @@
 //
-//  FirstViewController.swift
+//  ThirdViewController.swift
 //  SampleProjectSwift
 //
-//  Created by Pollfish Inc. on 11/4/15.
-//  Copyright © 2015 POLLFISH. All rights reserved.
+//  Created by Pollfish on 13/05/2019.
+//  Copyright © 2019 POLLFISH. All rights reserved.
 //
 
-import Pollfish
+
 import UIKit
+import Pollfish
 #if canImport(AppTrackingTransparency)
 import AppTrackingTransparency
 #endif
 
-class FirstViewController: UIViewController, PollfishDelegate {
-    
+class OfferwallViewController: UIViewController, PollfishDelegate {
+        
+    @IBOutlet weak var offerwallBtn: UIButton!
     @IBOutlet weak var loggingLabel: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        loggingLabel.text="Logging area.."
+                
+        loggingLabel.text = "Logging area.."
+        offerwallBtn.isHidden = true
         
         if #available(iOS 14, *) {
             requestIDFAPermission()
         } else {
-            pollfishInit()
+            initPollfish()
         }
         
-        loggingLabel.text="Logging area.."
+        loggingLabel.text = "Logging area.."
     }
     
     @available(iOS 14, *)
@@ -37,7 +40,7 @@ class FirstViewController: UIViewController, PollfishDelegate {
             DispatchQueue.main.async {
                 switch status {
                 case .authorized:
-                    self.pollfishInit()
+                    self.initPollfish()
                 default:
                     self.showNoPermissionAlert()
                 }
@@ -46,11 +49,11 @@ class FirstViewController: UIViewController, PollfishDelegate {
         #endif
     }
     
-    func pollfishInit(){
+    func initPollfish() {
         let pollfishParams = PollfishParams("YOUR_API_KEY")
-            .indicatorPosition(.middleRight)
-            .indicatorPadding(10)
-            .requestUUID("my_id")
+            .rewardMode(true)
+            .offerwallMode(true)
+            .releaseMode(false)
         
         Pollfish.initWith(pollfishParams, delegate: self)
     }
@@ -62,23 +65,16 @@ class FirstViewController: UIViewController, PollfishDelegate {
     }
     
     func pollfishSurveyReceived(surveyInfo: SurveyInfo?) {
-        let surveyPrice = surveyInfo?.cpa?.intValue
-        let surveyIR = surveyInfo?.ir?.intValue
-        let surveyLOI = surveyInfo?.loi?.intValue
-        let surveyClass = surveyInfo?.surveyClass
+        print("Pollfish Survey Received")
         
-        let rewardName = surveyInfo?.rewardName
-        let rewardValue = surveyInfo?.rewardValue?.intValue
-        
-        print("Pollfish Survey  Received - SurveyPrice: \(String(describing: surveyPrice)) andSurveyIR: \(String(describing: surveyIR)) andSurveyLOI: \(String(describing: surveyLOI)) andSurveyClass: \(String(describing: surveyClass)) andRewardName: \(String(describing: rewardName)) andRewardValue:\(String(describing: rewardValue))")
-        
-        loggingLabel.text="Pollfish Survey Received - SurveyPrice: \(surveyPrice ?? 0) andSurveyIR: \(surveyIR ?? 0) andSurveyLOI: \(surveyLOI ?? 0) andSurveyClass: \(surveyClass ?? "") andRewardName: \(rewardName ?? "") andRewardValue:\(rewardValue ?? 0)"
+        loggingLabel.text = "Pollfish Survey Received"
+        offerwallBtn.isHidden = false
     }
     
     func pollfishOpened() {
         print("pollfishOpened")
         
-        loggingLabel.text="Pollfish - Pollfish Panel Opened"
+        loggingLabel.text = "Pollfish - Pollfish Panel Opened"
     }
     
     func pollfishClosed() {
@@ -88,13 +84,7 @@ class FirstViewController: UIViewController, PollfishDelegate {
     func pollfishUserNotEligible() {
         print("pollfishUsernotEligible")
         
-        loggingLabel.text="Pollfish - User Not Eligible"
-    }
-    
-    func pollfishUserRejectedSurvey() {
-        print("pollfishUserRejectedSurvey")
-        
-        loggingLabel.text="Pollfish - User Rejected Survey"
+        loggingLabel.text = "Pollfish - User Not Eligible"
     }
     
     func pollfishSurveyCompleted(surveyInfo: SurveyInfo) {
@@ -108,20 +98,21 @@ class FirstViewController: UIViewController, PollfishDelegate {
         
         print("Pollfish Survey  Completed - SurveyPrice: \(String(describing: surveyPrice)) andSurveyIR: \(String(describing: surveyIR)) andSurveyLOI: \(String(describing: surveyLOI)) andSurveyClass: \(String(describing: surveyClass)) andRewardName: \(String(describing: rewardName)) andRewardValue:\(String(describing: rewardValue))")
         
-        loggingLabel.text = "Pollfish Survey Completed - SurveyPrice: \(surveyPrice ?? 0) andSurveyIR: \(surveyIR ?? 0) andSurveyLOI: \(surveyLOI ?? 0) andSurveyClass: \(surveyClass ?? "") andRewardName: \(rewardName ?? "") andRewardValue:\(rewardValue ?? 0)"
+        loggingLabel.text="Pollfish Survey Completed - You won \(rewardValue ?? 0) \(rewardName ?? "")"
+        
+        // in a real world app you should wait for s2s callbacks prior rewarding your user
     }
 
     @IBAction func showPollfish(_ sender: AnyObject) {
         print("showPollfish")
         
-        Pollfish.show();
+        Pollfish.show()
     }
     
     @IBAction func hidePollfish(_ sender: AnyObject) {
         print("hidePollfish")
         
-        Pollfish.hide();
+        Pollfish.hide()
     }
     
 }
-

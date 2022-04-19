@@ -7,13 +7,13 @@
 //
 
 
-#import "ThirdViewController.h"
+#import "OfferwallViewController.h"
 
-@interface ThirdViewController()
+@interface OfferwallViewController()
 
 @end
 
-@implementation ThirdViewController
+@implementation OfferwallViewController
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -28,15 +28,19 @@
 
 - (void)requestIDFAPermission {
 #if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
-    [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-      dispatch_async(dispatch_get_main_queue(), ^{
-          if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
-              [self initPollfish];
-          } else {
-              [self showNoPermissionAlert];
-          }
-      });
-    }];
+    if (@available(iOS 14, *)) {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
+                    [self initPollfish];
+                } else {
+                    [self showNoPermissionAlert];
+                }
+            });
+        }];
+    } else {
+        // Fallback on earlier versions
+    }
 #endif
 }
 
@@ -52,16 +56,16 @@
     
     [Pollfish initWith:pollfishParams delegate:self];
     
-    _offerwallBtn.hidden=true;
-    _loggingLabel.text=@"Logging area..";
+    _offerwallBtn.hidden = true;
+    _loggingLabel.text = @"Logging area..";
 }
 
 - (void)pollfishSurveyReceivedWithSurveyInfo:(SurveyInfo *)surveyInfo
 {
     NSLog(@"Pollfish: Survey Received - Offerwall available");
     
-    _offerwallBtn.hidden=false;
-    _loggingLabel.text=[NSString stringWithFormat:@"Pollfish: Survey Received - Offerwall available"];
+    _offerwallBtn.hidden = false;
+    _loggingLabel.text = [NSString stringWithFormat:@"Pollfish: Survey Received - Offerwall available"];
 }
 
 
@@ -78,7 +82,7 @@
     
     NSLog(@"Pollfish: Survey Completed - SurveyPrice:%d andSurveyIR: %d andSurveyLOI:%d andSurveyClass:%@ andRewardName:%@ andRewardValue:%d", surveyPrice,surveyIR, surveyLOI, surveyClass, rewardName, rewardValue);
     
-    _loggingLabel.text=[NSString stringWithFormat:@"Pollfish: Survey Completed - SurveyPrice:%d andSurveyIR: %d andSurveyLOI:%d andSurveyClass:%@ andRewardName:%@ andRewardValue:%d", surveyPrice,surveyIR, surveyLOI, surveyClass, rewardName, rewardValue];
+    _loggingLabel.text = [NSString stringWithFormat:@"Pollfish: Survey Completed - SurveyPrice:%d andSurveyIR: %d andSurveyLOI:%d andSurveyClass:%@ andRewardName:%@ andRewardValue:%d", surveyPrice,surveyIR, surveyLOI, surveyClass, rewardName, rewardValue];
 
     // in a real world app you should wait for s2s callbacks prior rewarding your user
 }
@@ -87,7 +91,7 @@
 {
     NSLog(@"Pollfish: Survey Opened");
     
-    _loggingLabel.text=@"Pollfish: Survey Opened";
+    _loggingLabel.text = @"Pollfish: Survey Opened";
 }
 
 - (void)pollfishClosed
@@ -99,14 +103,14 @@
 {
     NSLog(@"Pollfish: Offerwall Not Available");
     
-    _loggingLabel.text=@"Pollfish: Offerwall Not Available";
+    _loggingLabel.text = @"Pollfish: Offerwall Not Available";
 }
 
 - (void)pollfishUsernotEligible
 {
     NSLog(@"Pollfish: User Not Eligible");
     
-    _loggingLabel.text=@"Pollfish: User Not Eligible";
+    _loggingLabel.text = @"Pollfish: User Not Eligible";
 }
 
 -(IBAction)showPollfish:(id)sender{
@@ -117,8 +121,8 @@
 {
     NSLog(@"Pollfish: User Rejected Survey");
     
-    _loggingLabel.text=@"Pollfish: User Rejected Survey";
-    _offerwallBtn.hidden=true;
+    _loggingLabel.text = @"Pollfish: User Rejected Survey";
+    _offerwallBtn.hidden = true;
 }
 
 @end

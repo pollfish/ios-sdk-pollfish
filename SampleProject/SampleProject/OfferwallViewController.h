@@ -1,9 +1,9 @@
 //
-//  SecondViewController.h
+//  ThirdViewController.h
 //  SampleProject
 //
-//  Created by Pollfish Inc. on 11/3/15.
-//  Copyright © 2015 POLLFISH. All rights reserved.
+//  Created by Pollfish on 12/05/2019.
+//  Copyright © 2019 POLLFISH. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -13,12 +13,11 @@
 #endif
 #import "UIViewController+AlertHelper.h"
 
-@interface SecondViewController : UIViewController<PollfishDelegate>
+@interface OfferwallViewController : UIViewController<PollfishDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *incentivizeBtn;
+@property (weak, nonatomic) IBOutlet UIButton *offerwallBtn;
 @property (weak, nonatomic) IBOutlet UILabel *loggingLabel;
 
 -(IBAction)showPollfish:(id)sender;
 
 @end
-
