@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		oatbFOQSvL8NhyUAUmYcj2O4kd4=
+		0LuI5CTtQAuDTXZllCknWwvhtrw=
 		</data>
 		<key>Headers/Pollfish-Swift.h</key>
 		<data>
-		ZBmH+TSqJ6fQMo1n8KoqXs9/9aM=
+		gRBNhV0152dloyGp9dafG8NwurM=
 		</data>
 		<key>Headers/Pollfish.h</key>
 		<data>
@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dVZpscCKCmPQTJqteKKYl3QVsQM=
+		BH3PK/zZzupY2zCGkzVDhBxaMJE=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		995kmsJ5LaVxNprbFSQOV83iqVw=
+		Gic1vI0i9vU/3usrJPDcYsMuTCI=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		enCUTpjb9ZzTLW4Ouq+Y02JLtwM=
+		aYnm74qKXvONukD0dj8Epub4lhI=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		u0CwY+qHe1TeC4xJ+4sqQHbGWt0=
+		LQSPZbp8nXhSuTsPYUTz7WQkmms=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		i7YnaehT0GYpD7qXLjCngA4NK98=
+		k3FgXzwOcIwPjzoed+z8yJiv3mk=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
-		DwCodmeIzjI1X2AGiohid8xVQ8c=
+		3MeIc1Tvmch+bJhWKMbu9Y6+TmQ=
 		</data>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		mPZggDUxdNi3eB6LuI4UcJt+KWc=
+		PQWGAW6//uqmjdv895nqiMLQ4J4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,22 +59,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oatbFOQSvL8NhyUAUmYcj2O4kd4=
+			0LuI5CTtQAuDTXZllCknWwvhtrw=
 			</data>
 			<key>hash2</key>
 			<data>
-			YA93po6qFrx9KPi8kfS2Db6D9XAovWwXBuWao7bUu0I=
+			tSwFnMAW/fyrjYlDFb/p/6Po2T6XW3Ctvlt93QmeHZY=
 			</data>
 		</dict>
 		<key>Headers/Pollfish-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZBmH+TSqJ6fQMo1n8KoqXs9/9aM=
+			gRBNhV0152dloyGp9dafG8NwurM=
 			</data>
 			<key>hash2</key>
 			<data>
-			xng1jMx2fhV5YDHFadtLg1MO0bknh5nnVQQ6Vr7nOKg=
+			FW/La4mV0GvBdD5QpZC9juq5TY5B0QNt5KBp1BJ0sNQ=
 			</data>
 		</dict>
 		<key>Headers/Pollfish.h</key>
@@ -92,66 +92,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			995kmsJ5LaVxNprbFSQOV83iqVw=
+			Gic1vI0i9vU/3usrJPDcYsMuTCI=
 			</data>
 			<key>hash2</key>
 			<data>
-			4N7jGOH5I6BMdAG6jhgf1SdcJoshvA3ODX9icw07gVw=
+			wVW0Itue9C5drycGv+qV5Z+gvPmd5vMZ8PXvBey+htY=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			enCUTpjb9ZzTLW4Ouq+Y02JLtwM=
+			aYnm74qKXvONukD0dj8Epub4lhI=
 			</data>
 			<key>hash2</key>
 			<data>
-			MGMeNqhqRTNDnFi6D3Dd2yfRKK2u5d8Ar/xiOuIkxjs=
+			/DNIQS1Na2BPNgDTIiPdPfPYTeFFWT4jMCmunoB7FQI=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			u0CwY+qHe1TeC4xJ+4sqQHbGWt0=
+			LQSPZbp8nXhSuTsPYUTz7WQkmms=
 			</data>
 			<key>hash2</key>
 			<data>
-			kt/9PjrddaGzPTBy1LM5+BVu4RHwGR/pjRYCJ+vT/vE=
+			lUXw0qZ18JkR0mzDiXOscBetnobtPojtz4FtRF9CdvE=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i7YnaehT0GYpD7qXLjCngA4NK98=
+			k3FgXzwOcIwPjzoed+z8yJiv3mk=
 			</data>
 			<key>hash2</key>
 			<data>
-			t3JOHbBQjHJmWiR9aI8OLTTdVFgW+xKHfM9v+717zwg=
+			1RJhhMGvsk/h2hISb7s6T3kWu4d+kMdzJf/v3PkH2no=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DwCodmeIzjI1X2AGiohid8xVQ8c=
+			3MeIc1Tvmch+bJhWKMbu9Y6+TmQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			hKAJmKie5E+8NQadEEP7bPVPrjH1xE9UiFddBAJEmm8=
+			k+Icpx2kwEEf1nJifZse/yf9U9b5VAdaqpxck4M50w0=
 			</data>
 		</dict>
 		<key>Modules/Pollfish.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mPZggDUxdNi3eB6LuI4UcJt+KWc=
+			PQWGAW6//uqmjdv895nqiMLQ4J4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6J/wKcc71JCR58SkR0RejvLavHUdchTJCN85Nfgnse4=
+			e6lLc7+m9H0AfkHqwjhKGUselJ89ChZYGdek5jm9OHE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
