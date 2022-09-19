@@ -25,7 +25,6 @@ Though CocoaPods:
 
 * Add a Podfile with Pollfish framework as a pod reference:
 ```
-platform :ios, '9.0'
 pod 'Pollfish'
 ```
 * Run 'pod install' on the command line to install the Pollfish cocoapod. 
