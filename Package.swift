@@ -15,7 +15,7 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "Pollfish.xcframework",
+            name: "Pollfish",
             path: "Pollfish.xcframework")
     ],
     swiftLanguageVersions: [.v5]
