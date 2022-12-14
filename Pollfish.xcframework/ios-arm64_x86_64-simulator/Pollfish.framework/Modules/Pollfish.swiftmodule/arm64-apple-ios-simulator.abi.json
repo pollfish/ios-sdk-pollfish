@@ -331,6 +331,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Pollfish",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "UserProperties",
         "printedName": "UserProperties",
@@ -14594,6 +14604,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Pollfish",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -19660,6 +19680,69 @@
       "value": "\"Pollfish.IndicatorViewImpl\""
     },
     {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 223,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 223,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 223,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 1,
+      "value": "2"
+    },
+    {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/Presenter\/SurveyPanelOverlayPresenter.swift",
       "kind": "FloatLiteral",
       "offset": 3298,
@@ -21554,14 +21637,14 @@
       "kind": "StringLiteral",
       "offset": 211,
       "length": 7,
-      "value": "\"6.3.0\""
+      "value": "\"6.3.1\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 247,
       "length": 3,
-      "value": "115"
+      "value": "116"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Constants.swift",
@@ -22224,756 +22307,770 @@
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7130,
+      "offset": 7330,
       "length": 9,
       "value": "\"api_key\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7160,
+      "offset": 7360,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7196,
+      "offset": 7396,
       "length": 15,
       "value": "\"survey_format\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7232,
+      "offset": 7432,
       "length": 11,
       "value": "\"survey_id\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7267,
+      "offset": 7467,
       "length": 14,
       "value": "\"request_uuid\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7304,
+      "offset": 7504,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7331,
+      "offset": 7531,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7360,
+      "offset": 7560,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7394,
+      "offset": 7594,
       "length": 12,
       "value": "\"encryption\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7438,
+      "offset": 7638,
       "length": 23,
       "value": "\"always_return_content\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7483,
+      "offset": 7683,
       "length": 11,
       "value": "\"offerwall\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7517,
+      "offset": 7717,
       "length": 13,
       "value": "\"reward_mode\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7551,
+      "offset": 7751,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7582,
+      "offset": 7786,
+      "length": 20,
+      "value": "\"sdk_device_id_type\""
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
+      "kind": "StringLiteral",
+      "offset": 7827,
       "length": 10,
       "value": "\"position\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7622,
+      "offset": 7867,
       "length": 14,
       "value": "\"device_descr\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7657,
+      "offset": 7902,
       "length": 10,
       "value": "\"provider\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7697,
+      "offset": 7942,
       "length": 14,
       "value": "\"provider_mcc\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7741,
+      "offset": 7986,
       "length": 14,
       "value": "\"provider_mnc\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7778,
+      "offset": 8023,
       "length": 13,
       "value": "\"nfc_enabled\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7813,
+      "offset": 8058,
       "length": 12,
       "value": "\"nfc_exists\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7851,
+      "offset": 8096,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7887,
+      "offset": 8132,
       "length": 4,
       "value": "\"os\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7926,
+      "offset": 8171,
       "length": 8,
       "value": "\"os_ver\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7959,
+      "offset": 8204,
       "length": 7,
       "value": "\"scr_h\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7990,
+      "offset": 8235,
       "length": 7,
       "value": "\"scr_w\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8022,
+      "offset": 8267,
       "length": 14,
       "value": "\"manufacturer\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8067,
+      "offset": 8312,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8107,
+      "offset": 8352,
       "length": 10,
       "value": "\"con_type\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8136,
+      "offset": 8381,
       "length": 8,
       "value": "\"locale\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8181,
+      "offset": 8426,
       "length": 10,
       "value": "\"scr_size\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8224,
+      "offset": 8469,
       "length": 23,
       "value": "\"accessibility_enabled\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8279,
+      "offset": 8524,
       "length": 22,
       "value": "\"hardware_accelerated\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8323,
+      "offset": 8568,
       "length": 11,
       "value": "\"usr_agent\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8352,
+      "offset": 8597,
       "length": 7,
       "value": "\"board\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8384,
+      "offset": 8629,
       "length": 7,
       "value": "\"video\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8417,
+      "offset": 8662,
       "length": 16,
       "value": "\"advertising_id\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8456,
+      "offset": 8701,
       "length": 13,
       "value": "\"locale_list\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8488,
+      "offset": 8733,
       "length": 9,
       "value": "\"opt_out\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8521,
+      "offset": 8766,
       "length": 8,
       "value": "\"gender\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8555,
+      "offset": 8800,
       "length": 16,
       "value": "\"marital_status\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8595,
+      "offset": 8840,
       "length": 15,
       "value": "\"year_of_birth\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8631,
+      "offset": 8876,
       "length": 10,
       "value": "\"parental\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8663,
+      "offset": 8908,
       "length": 11,
       "value": "\"education\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8697,
+      "offset": 8942,
       "length": 12,
       "value": "\"employment\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8728,
+      "offset": 8973,
       "length": 8,
       "value": "\"career\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8753,
+      "offset": 8998,
       "length": 6,
       "value": "\"race\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8778,
+      "offset": 9023,
       "length": 8,
       "value": "\"income\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8814,
+      "offset": 9059,
       "length": 18,
       "value": "\"spoken_languages\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8861,
+      "offset": 9106,
       "length": 19,
       "value": "\"organization_role\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8910,
+      "offset": 9155,
       "length": 21,
       "value": "\"number_of_employees\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8954,
+      "offset": 9199,
       "length": 13,
       "value": "\"postal_data\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8995,
+      "offset": 9240,
       "length": 13,
       "value": "\"reward_name\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 9037,
+      "offset": 9282,
       "length": 19,
       "value": "\"reward_conversion\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 9076,
+      "offset": 9321,
       "length": 10,
       "value": "\"click_id\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7130,
+      "offset": 7330,
       "length": 9,
       "value": "\"api_key\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7160,
+      "offset": 7360,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7196,
+      "offset": 7396,
       "length": 15,
       "value": "\"survey_format\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7232,
+      "offset": 7432,
       "length": 11,
       "value": "\"survey_id\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7267,
+      "offset": 7467,
       "length": 14,
       "value": "\"request_uuid\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7304,
+      "offset": 7504,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7331,
+      "offset": 7531,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7360,
+      "offset": 7560,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7394,
+      "offset": 7594,
       "length": 12,
       "value": "\"encryption\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7438,
+      "offset": 7638,
       "length": 23,
       "value": "\"always_return_content\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7483,
+      "offset": 7683,
       "length": 11,
       "value": "\"offerwall\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7517,
+      "offset": 7717,
       "length": 13,
       "value": "\"reward_mode\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7551,
+      "offset": 7751,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7582,
+      "offset": 7786,
+      "length": 20,
+      "value": "\"sdk_device_id_type\""
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
+      "kind": "StringLiteral",
+      "offset": 7827,
       "length": 10,
       "value": "\"position\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7622,
+      "offset": 7867,
       "length": 14,
       "value": "\"device_descr\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7657,
+      "offset": 7902,
       "length": 10,
       "value": "\"provider\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7697,
+      "offset": 7942,
       "length": 14,
       "value": "\"provider_mcc\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7741,
+      "offset": 7986,
       "length": 14,
       "value": "\"provider_mnc\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7778,
+      "offset": 8023,
       "length": 13,
       "value": "\"nfc_enabled\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7813,
+      "offset": 8058,
       "length": 12,
       "value": "\"nfc_exists\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7851,
+      "offset": 8096,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7887,
+      "offset": 8132,
       "length": 4,
       "value": "\"os\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7926,
+      "offset": 8171,
       "length": 8,
       "value": "\"os_ver\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7959,
+      "offset": 8204,
       "length": 7,
       "value": "\"scr_h\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 7990,
+      "offset": 8235,
       "length": 7,
       "value": "\"scr_w\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8022,
+      "offset": 8267,
       "length": 14,
       "value": "\"manufacturer\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8067,
+      "offset": 8312,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8107,
+      "offset": 8352,
       "length": 10,
       "value": "\"con_type\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8136,
+      "offset": 8381,
       "length": 8,
       "value": "\"locale\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8181,
+      "offset": 8426,
       "length": 10,
       "value": "\"scr_size\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8224,
+      "offset": 8469,
       "length": 23,
       "value": "\"accessibility_enabled\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8279,
+      "offset": 8524,
       "length": 22,
       "value": "\"hardware_accelerated\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8323,
+      "offset": 8568,
       "length": 11,
       "value": "\"usr_agent\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8352,
+      "offset": 8597,
       "length": 7,
       "value": "\"board\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8384,
+      "offset": 8629,
       "length": 7,
       "value": "\"video\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8417,
+      "offset": 8662,
       "length": 16,
       "value": "\"advertising_id\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8456,
+      "offset": 8701,
       "length": 13,
       "value": "\"locale_list\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8488,
+      "offset": 8733,
       "length": 9,
       "value": "\"opt_out\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8521,
+      "offset": 8766,
       "length": 8,
       "value": "\"gender\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8555,
+      "offset": 8800,
       "length": 16,
       "value": "\"marital_status\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8595,
+      "offset": 8840,
       "length": 15,
       "value": "\"year_of_birth\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8631,
+      "offset": 8876,
       "length": 10,
       "value": "\"parental\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8663,
+      "offset": 8908,
       "length": 11,
       "value": "\"education\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8697,
+      "offset": 8942,
       "length": 12,
       "value": "\"employment\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8728,
+      "offset": 8973,
       "length": 8,
       "value": "\"career\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8753,
+      "offset": 8998,
       "length": 6,
       "value": "\"race\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8778,
+      "offset": 9023,
       "length": 8,
       "value": "\"income\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8814,
+      "offset": 9059,
       "length": 18,
       "value": "\"spoken_languages\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8861,
+      "offset": 9106,
       "length": 19,
       "value": "\"organization_role\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8910,
+      "offset": 9155,
       "length": 21,
       "value": "\"number_of_employees\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8954,
+      "offset": 9199,
       "length": 13,
       "value": "\"postal_data\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 8995,
+      "offset": 9240,
       "length": 13,
       "value": "\"reward_name\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 9037,
+      "offset": 9282,
       "length": 19,
       "value": "\"reward_conversion\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/PollfishConfiguration\/PollfishConfigurationRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 9076,
+      "offset": 9321,
       "length": 10,
       "value": "\"click_id\""
     },

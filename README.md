@@ -19,22 +19,22 @@ Since Pollfish addresses the market research marketplace, Pollfish surveys can b
 
 ## Quick Quide
 
-Though CocoaPods:
-
-
+### **CocoaPods**
 
 * Add a Podfile with Pollfish framework as a pod reference:
+
 ```
 pod 'Pollfish'
 ```
+
 * Run 'pod install' on the command line to install the Pollfish cocoapod. 
 * Call init and destroy function of Pollfish in the App’s Delegate or within a View Controller
 * Set to Release mode and release in AppStore
 * Update your privacy policy
 
+<br>
 
-
-or:
+### **Manual download**
 
 * Download Pollfish iOS SDK and unzip it
 * Import Pollfish.framework to your project
