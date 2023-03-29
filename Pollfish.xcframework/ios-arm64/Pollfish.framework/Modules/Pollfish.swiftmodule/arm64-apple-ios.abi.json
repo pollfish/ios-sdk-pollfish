@@ -15722,6 +15722,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Pollfish",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -16431,6 +16441,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Pollfish",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -16617,6 +16637,121 @@
         "moduleName": "Pollfish",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIInterfaceOrientation",
+        "printedName": "UIInterfaceOrientation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So22UIInterfaceOrientationV8PollfishE11descriptionSSvp",
+            "mangledName": "$sSo22UIInterfaceOrientationV8PollfishE11descriptionSSvp",
+            "moduleName": "Pollfish",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So22UIInterfaceOrientationV8PollfishE11descriptionSSvg",
+                "mangledName": "$sSo22UIInterfaceOrientationV8PollfishE11descriptionSSvg",
+                "moduleName": "Pollfish",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@E@UIInterfaceOrientation",
+        "moduleName": "UIKit",
+        "objc_name": "UIInterfaceOrientation",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "ObjC",
+          "SynthesizedProtocol",
+          "Sendable",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "enumRawTypeName": "Int",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
         ]
       },
       {
@@ -19324,210 +19459,210 @@
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "FloatLiteral",
-      "offset": 7584,
+      "offset": 7598,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 8014,
+      "offset": 8028,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "FloatLiteral",
-      "offset": 8348,
+      "offset": 8362,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "FloatLiteral",
-      "offset": 8444,
+      "offset": 8458,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "FloatLiteral",
-      "offset": 8542,
+      "offset": 8556,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "FloatLiteral",
-      "offset": 8616,
+      "offset": 8630,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 10255,
+      "offset": 10269,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 10715,
+      "offset": 10729,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "FloatLiteral",
-      "offset": 10866,
+      "offset": 10880,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "FloatLiteral",
-      "offset": 10963,
+      "offset": 10977,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "FloatLiteral",
-      "offset": 11062,
+      "offset": 11076,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 11768,
+      "offset": 11782,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 12518,
+      "offset": 12532,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 13371,
+      "offset": 13385,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "StringLiteral",
-      "offset": 13415,
+      "offset": 13429,
       "length": 10,
       "value": "\"✕\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "IntegerLiteral",
-      "offset": 13813,
+      "offset": 13827,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 13875,
+      "offset": 13889,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "StringLiteral",
-      "offset": 14245,
+      "offset": 14259,
       "length": 18,
       "value": "\"pollfish_refresh\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 14553,
+      "offset": 14567,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 15184,
+      "offset": 15198,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "FloatLiteral",
-      "offset": 15300,
+      "offset": 15314,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 15895,
+      "offset": 15909,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "StringLiteral",
-      "offset": 16130,
+      "offset": 16144,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 16756,
+      "offset": 16770,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 17309,
+      "offset": 17323,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 17736,
+      "offset": 17750,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "IntegerLiteral",
-      "offset": 17790,
+      "offset": 17804,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 17962,
+      "offset": 17976,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "FloatLiteral",
-      "offset": 18428,
+      "offset": 18442,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/SurveyPanelViewController\/PollfishSurveyPanelViewContoller.swift",
       "kind": "BooleanLiteral",
-      "offset": 18494,
+      "offset": 18508,
       "length": 5,
       "value": "false"
     },
@@ -19709,112 +19844,112 @@
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/Indicator\/IndicatorView.swift",
       "kind": "FloatLiteral",
-      "offset": 2718,
+      "offset": 2710,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/Indicator\/IndicatorView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3314,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/Indicator\/IndicatorView.swift",
-      "kind": "StringLiteral",
-      "offset": 196,
-      "length": 17,
-      "value": "\"Pollfish.IndicatorViewImpl\""
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/Indicator\/IndicatorView.swift",
-      "kind": "StringLiteral",
-      "offset": 196,
-      "length": 17,
-      "value": "\"Pollfish.IndicatorViewImpl\""
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 223,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 244,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 264,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 223,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 244,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 264,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 223,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 244,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 264,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/Presenter\/SurveyPanelOverlayPresenter.swift",
       "kind": "FloatLiteral",
       "offset": 3298,
       "length": 3,
       "value": "0.0"
     },
     {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/Indicator\/IndicatorView.swift",
+      "kind": "StringLiteral",
+      "offset": 196,
+      "length": 17,
+      "value": "\"Pollfish.IndicatorViewImpl\""
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/Indicator\/IndicatorView.swift",
+      "kind": "StringLiteral",
+      "offset": 196,
+      "length": 17,
+      "value": "\"Pollfish.IndicatorViewImpl\""
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 223,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 223,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 223,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Model\/DeviceIdType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/Presenter\/SurveyPanelOverlayPresenter.swift",
+      "kind": "FloatLiteral",
+      "offset": 3291,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/Presenter\/SurveyPanelOverlayPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3380,
+      "offset": 3373,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/Presenter\/SurveyPanelOverlayPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3442,
+      "offset": 3435,
       "length": 5,
       "value": "false"
     },
@@ -21692,14 +21827,14 @@
       "kind": "StringLiteral",
       "offset": 211,
       "length": 7,
-      "value": "\"6.4.0\""
+      "value": "\"6.4.1\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 247,
       "length": 3,
-      "value": "117"
+      "value": "118"
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Constants.swift",
@@ -22351,6 +22486,13 @@
       "offset": 746,
       "length": 7,
       "value": "\"debug\""
+    },
+    {
+      "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Presentation\/SurveyPanel\/Presenter\/BaseViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 18,
+      "value": "\"Pollfish.BaseViewController\""
     },
     {
       "filePath": "\/Users\/fotismitropoulos\/Pollfish\/Repos\/ios-sdk-swift5\/Source\/Domain\/UseCases\/DeviceSpecs\/RetrieveDeviceInfoUseCase.swift",

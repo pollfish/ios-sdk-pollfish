@@ -1,9 +1,5 @@
 # Pollfish iOS SDK #
 
-|Version Name | Internal Version Number | Swift Version | Min iOS Target |
-|------|------|---|---|
-6.0.1 | 102 | 5 | 9
-
 <br/>
 
 Detailed specifications can be found [here](https://pollfish.atlassian.net/wiki/spaces/PSD/pages/1570865153/Mobile+SDKs+New+Kotlin+Swift)
@@ -146,7 +142,7 @@ At any case you should never write directly to the ```master``` branch
 <br/>
 You should create a new branch from the ```master``` with a name that is easily associated with the related JIRA issue.  <br/>
 
-**Branch Name Format:** ```PUB-1832-issue-title```
+**Branch Name Format:** ```PUB-1832```
 
 **Commit Message Format:** ```PUB-1832 | Commit Message```
 
@@ -214,5 +210,5 @@ More info can be found [here](https://pollfish.atlassian.net/wiki/spaces/PSD/pag
 
 # Contact #
 
-* **Antreas Vourkos** | [andreas@pollfish.com](mailto:andreas@pollfish.com) | @vourkosa
-* **Fotis Mitropoulos** | [fotis@pollfish.com](mailto:fotis@pollfish.com) | @fotis
+* **Andreas Vourkos** | [andreas@pollfish.com](mailto:andreas.vourkos@prodege.com) | @vourkosa
+* **Fotis Mitropoulos** | [fotis@pollfish.com](mailto:fotis.mitropoulos@prodege.com) | @fotis

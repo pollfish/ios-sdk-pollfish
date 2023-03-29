@@ -499,6 +499,11 @@ extension UIKit.UIDeviceOrientation : Swift.CustomStringConvertible {
     get
   }
 }
+extension UIKit.UIInterfaceOrientation : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
 extension Gender : Swift.Equatable {}
 extension Gender : Swift.Hashable {}
 extension Gender : Swift.RawRepresentable {}

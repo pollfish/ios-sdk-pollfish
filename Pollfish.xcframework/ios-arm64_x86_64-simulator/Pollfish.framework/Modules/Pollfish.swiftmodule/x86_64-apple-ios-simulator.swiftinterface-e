@@ -499,6 +499,11 @@ extension UIKit.UIDeviceOrientation : Swift.CustomStringConvertible {
     get
   }
 }
+extension UIKit.UIInterfaceOrientation : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
 extension Pollfish.Gender : Swift.Equatable {}
 extension Pollfish.Gender : Swift.Hashable {}
 extension Pollfish.Gender : Swift.RawRepresentable {}
