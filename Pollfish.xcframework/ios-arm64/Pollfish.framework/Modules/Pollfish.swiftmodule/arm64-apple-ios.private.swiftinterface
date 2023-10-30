@@ -398,6 +398,9 @@ public enum UserProperty : Swift.Equatable {
   public var monitorOrientationChanges: Swift.Bool {
     get
   }
+  public var placementId: Swift.String? {
+    get
+  }
   @objc public init(_ apiKey: Swift.String)
   @discardableResult
   @objc public func rewardMode(_ rewardMode: Swift.Bool) -> PollfishParams
@@ -429,6 +432,8 @@ public enum UserProperty : Swift.Equatable {
   @objc public func platform(_ platform: Platform) -> PollfishParams
   @discardableResult
   @objc public func monitorOrientationChanges(_ monitorOrientationChanges: Swift.Bool) -> PollfishParams
+  @discardableResult
+  @objc public func placementId(_ placementId: Swift.String) -> PollfishParams
   @objc deinit
 }
 @objc public enum SurveyFormat : Swift.Int {

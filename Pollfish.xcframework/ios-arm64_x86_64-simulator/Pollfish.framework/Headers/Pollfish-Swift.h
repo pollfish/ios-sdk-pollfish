@@ -511,6 +511,7 @@ SWIFT_CLASS("_TtC8Pollfish14PollfishParams")
 - (PollfishParams * _Nonnull)userId:(NSString * _Nonnull)userId;
 - (PollfishParams * _Nonnull)platform:(enum Platform)platform;
 - (PollfishParams * _Nonnull)monitorOrientationChanges:(BOOL)monitorOrientationChanges;
+- (PollfishParams * _Nonnull)placementId:(NSString * _Nonnull)placementId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1156,6 +1157,7 @@ SWIFT_CLASS("_TtC8Pollfish14PollfishParams")
 - (PollfishParams * _Nonnull)userId:(NSString * _Nonnull)userId;
 - (PollfishParams * _Nonnull)platform:(enum Platform)platform;
 - (PollfishParams * _Nonnull)monitorOrientationChanges:(BOOL)monitorOrientationChanges;
+- (PollfishParams * _Nonnull)placementId:(NSString * _Nonnull)placementId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
